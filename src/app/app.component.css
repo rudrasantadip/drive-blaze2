@@ -1,0 +1,106 @@
+
+/* Root Container */
+.container-fluid{
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    color: white;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, main (scrollable), footer */
+    grid-template-columns: 1fr; /* Single column */
+}
+
+/* header Css */
+header
+{
+    grid-row: 1 / 2; /* Places header in the first row */
+    color: white;
+    text-align: center;
+}
+
+header>button{
+    display: none;
+    background: transparent;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+header>button>i{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Main Css */
+main
+{   
+    grid-row: 2 / 3; /* Places main content in the second row */
+    padding: 20px;
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden;
+    direction: rtl;
+    text-align: center;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 4px; /* Adjust the width as needed */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--premiumwhite); /* Change color as needed */
+    border-radius: 4px; /* Adjust the border radius as needed */
+  }
+
+
+/* Footer Css */
+footer{
+    border: 0.2px solid silver;
+    grid-row: 3 / 4; /* Places footer in the third row */
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+
+    header> button{
+        display: block;
+    }
+    
+    .navon{
+        grid-template-rows: 1fr auto; /* Main and footer only */
+        grid-template-columns: 100% 0%; /* Header on the left, main on the right */
+    }
+
+    .navoff{
+        grid-template-rows: 1fr auto; 
+        grid-template-columns: 0% 100%;
+    }
+
+    header {
+        grid-row: 1 / 3; /* Header spans both rows (main and footer) */
+        grid-column: 1 / 2; /* Header in the first column */
+        text-align: center; /* Optional: align text to the left */
+    }
+
+    main {
+        grid-row: 1 / 2; /* Main content in the first row */
+        grid-column: 2 / 3; /* Main content in the second column */
+    }
+
+    footer {
+        grid-row: 2 / 3; /* Footer at the bottom */
+        grid-column: 2 / 3; /* Footer in the second column */
+    }
+}
+
+
+

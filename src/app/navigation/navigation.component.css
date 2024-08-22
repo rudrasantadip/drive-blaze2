@@ -1,0 +1,121 @@
+.layout-container{
+    display: flex;
+}
+
+
+/* image and logo  */
+.logo{
+    object-fit: contain;
+}
+.logo > img{
+    width: 100px;
+}
+
+.logo > i{
+    display: none;
+}
+
+
+/* navigation item css */
+.nav-items{ 
+    display: flex;
+    align-items: center;
+}
+
+.nav-items > ul{
+    list-style: none;
+    padding-left: 3px;
+    margin-top: 12px;
+    display: flex;
+}
+
+.logo > button{
+    display: none;
+}
+
+.nav-item{
+    display: block;
+    margin-left: 12px;
+    margin-right: 12px;
+    background: rgb(51, 50, 50); /* Semi-transparent black background */
+    border-radius: 18px; /* Optional: rounded corners */
+    padding: 12px; /* Space inside the div */
+    backdrop-filter: blur(10px); /* Applies a blur effect to the background */
+    box-shadow: 0 4px 8px rgba(147, 145, 145, 0.2); /* Optional: subtle shadow */
+    color: white; /* Text color for contrast */
+    width: 120px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.nav-item:hover{
+    transform: scale(1.05);
+    box-shadow: 
+    0 0 10px rgba(0, 255, 0, 0.5), /* Green glow */
+    0 0 20px rgba(255, 255, 0, 0.5); /* Gold glow */
+}
+
+.glow-text {
+    text-decoration: none;
+    color: #ffffff; /* Text color */
+    text-shadow: 
+        0 0 5px rgba(0, 255, 0, 0.7), /* Green inner glow */
+        0 0 10px rgba(0, 255, 0, 0.7), /* Green outer glow */
+        0 0 15px rgba(255, 215, 0, 0.7), /* Gold outer glow */
+        0 0 20px rgba(255, 215, 0, 0.7); /* Stronger gold outer glow */
+}
+
+.hidenav{
+    display: none;
+}
+.shownav{
+    display: flex;
+}
+
+
+/* responsiveness */
+
+/* Responsive layout for mobile */
+@media (max-width: 768px) {
+
+   
+
+
+    .layout-container{
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+    }
+
+    .logo > button{
+        background: transparent;
+        font-size: 20px;
+        font-weight: bold;
+        display: block;
+        z-index: 1000;
+    }
+
+
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .nav-items > ul{
+       flex-direction: column;
+    }
+
+    .nav-item{
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+
+        margin-top: 16px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+}

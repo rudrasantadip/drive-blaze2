@@ -1,0 +1,223 @@
+.layout-container
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.containers{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.gradient-text {
+    font-weight: bold;
+    background: linear-gradient(90deg, #00ff99, #ffcc00);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .gradient-text2{
+    background: linear-gradient(90deg,  #ffcc00,#00ff99);
+    -webkit-background-clip: text;
+    color: transparent;
+    
+  }
+
+.logo > img{
+    width: 300px;
+}
+
+.logo-text > h2{
+    text-transform: uppercase;
+    margin-top: -15%;
+}
+
+.gradient-button {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    background: linear-gradient(90deg, #00ff99, #ffdd00);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    background-size: 200% 200%;
+}
+
+.gradient-button:hover {
+    width: 300px;
+    background-size: 200% 200%;
+}
+
+.description{
+    margin: 12px;
+}
+
+.description > p
+{
+    text-align: center;
+}
+
+
+/* amimatopms */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 3s forwards; /* Adjust duration as needed */
+}
+
+
+.button-appear {
+    transition: all 0.5s ease-in;
+    width: 200px;
+    display: inline-block;
+    background: linear-gradient(45deg, #fbff00, #00ff5e);
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    animation: buttonAnimation 1s ease-out forwards;
+    animation-delay: 1s; /* Adjust delay to suit your needs */
+}
+
+.button-appear:hover{
+    width: 300px;
+}
+
+
+/* hexagon */
+.menu-container {
+    position: relative;
+    top: 40%;
+    right:40%;
+}
+
+.menu-item {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(45deg, lime, gold);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    transition: all 0.5s ease-in;
+}
+
+
+
+
+
+.menu-item:hover{
+    transform: scale(1.05) rotate(60deg);
+}
+
+.menu-item h2 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.item-1 { transform: rotate(0deg) translate(120px) rotate(0deg); }
+.item-2 { transform: rotate(60deg) translate(120px) rotate(-60deg); }
+.item-3 { transform: rotate(120deg) translate(120px) rotate(-120deg); }
+.item-4 { transform: rotate(180deg) translate(120px) rotate(-180deg); }
+.item-5 { transform: rotate(240deg) translate(120px) rotate(-240deg); }
+.item-6 { transform: rotate(300deg) translate(120px) rotate(-300deg); }
+
+
+
+/* prop image */
+.prom-image{
+    width: 200px;
+    object-fit: contain;
+}
+
+.prom-image > img{
+    width: 200px;
+}
+
+.prom-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+/* media queries from here */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes buttonAnimation {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .layout-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .containers{
+        width: 100%;
+    }
+
+    .menu-container{
+        display: none;
+    }
+
+    .menu-item{
+        width: 35px;
+        height: 35px;
+    }
+    .menu-item > h2{
+        font-size: 12px;
+    }
+
+    .prom-image > img{
+        width: 150px;
+    }
+}
