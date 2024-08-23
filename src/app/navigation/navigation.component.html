@@ -9,14 +9,14 @@
 
     <div class="nav-items">
         <ul>
-            <li class="nav-item"><a routerLink="/about"  class="glow-text">About</a></li>
-            <li class="nav-item"><a routerLink="/contests" class="glow-text">Contests</a></li>
-            <li class="nav-item"><a class="glow-text">Workshops</a></li>
-            <li class="nav-item"><a routerLink="/hackathon" class="glow-text">Hackathons</a></li>
-            <li class="nav-item"><a class="glow-text">Tech Talk</a></li>
-            <li class="nav-item"><a class="glow-text">Sponsors</a></li>
-            <li class="nav-item"><a class="glow-text">Contact Us</a></li>
-            <li class="nav-item"><a class="glow-text">Team</a></li>
+            <li class="nav-item"><a routerLink="/about" (click)="closeButton()"  class="glow-text">About</a></li>
+            <li class="nav-item"><a routerLink="/contests" (click)="closeButton()"   class="glow-text">Contests</a></li>
+            <li class="nav-item"><a class="glow-text" (click)="closeButton()">Workshops</a></li>
+            <li class="nav-item"><a routerLink="/hackathon" (click)="closeButton()" class="glow-text">Hackathons</a></li>
+            <li class="nav-item"><a class="glow-text" (click)="closeButton()">Tech Talk</a></li>
+            <li class="nav-item"><a class="glow-text" (click)="closeButton()">Sponsors</a></li>
+            <li class="nav-item"><a class="glow-text" (click)="closeButton()">Contact Us</a></li>
+            <li class="nav-item"><a class="glow-text" (click)="closeButton()">Team</a></li>
         </ul>
     </div>
 </div>
