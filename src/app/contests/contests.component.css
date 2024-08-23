@@ -44,7 +44,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: black;
   font-size: 12px;
   text-shadow: 0 0 5px black;
   padding: 5px;
@@ -56,6 +56,7 @@
 }
 
 .event-name {
+  color: black;
   font-weight: bold;
   position: relative;
   z-index: 2;
@@ -63,7 +64,7 @@
 
 .glow-text {
   text-decoration: none;
-  color: #ffffff; /* Text color */
+  color:black; /* Text color */
   text-shadow: 
       0 0 5px rgba(0, 255, 0, 0.7), /* Green inner glow */
       0 0 10px rgba(0, 255, 0, 0.7), /* Green outer glow */
@@ -93,6 +94,11 @@ h3{
 
   h3{
     margin-top: 56px;
+  }
+
+  .orbit-circle {
+    width: 100px;
+    height: 100px;
   }
 }
 

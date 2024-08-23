@@ -1,0 +1,11 @@
+.description{
+    direction: ltr;
+    margin: 20px;
+}
+.description > p{
+    text-align: justify;
+}
+
+.description > img{
+    width: 100px;
+}

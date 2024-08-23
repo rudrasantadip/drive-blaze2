@@ -9,6 +9,9 @@ import { VideoBgComponent } from './video-bg/video-bg.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContestsComponent } from './contests/contests.component';
 import { HackSynthesisComponent } from './hack-synthesis/hack-synthesis.component';
+import { AboutComponent } from './about/about.component';
+
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -18,11 +21,13 @@ import { HackSynthesisComponent } from './hack-synthesis/hack-synthesis.componen
     VideoBgComponent,
     FooterComponent,
     ContestsComponent,
-    HackSynthesisComponent
+    HackSynthesisComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

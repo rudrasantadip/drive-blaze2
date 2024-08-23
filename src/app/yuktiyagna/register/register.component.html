@@ -1,4 +1,4 @@
-<form (ngSubmit)="onSubmit()" #registrationForm="ngForm">
+<form (ngSubmit)="onSubmit(registrationForm)" #registrationForm="ngForm">
     <!-- Personal Information Section -->
     <fieldset>
       <legend>Personal Information</legend>
@@ -7,54 +7,54 @@
       <h3>Leader Details</h3>
       <div>
         <label for="leaderEmail">Leader Email:</label>
-        <input type="email" id="leaderEmail" name="leaderEmail" ngModel required>
+        <input type="email" id="leaderEmail" name="leaderEmail" [ngModel]="formData.leaderEmail" required>
       </div>
       <div>
         <label for="leaderMobile">Leader Mobile:</label>
-        <input type="tel" id="leaderMobile" name="leaderMobile" ngModel required>
+        <input type="tel" id="leaderMobile" name="leaderMobile" [ngModel]="formData.leaderMobile" required>
       </div>
       <div>
         <label for="leaderFullName">Leader Full Name:</label>
-        <input type="text" id="leaderFullName" name="leaderFullName" ngModel required>
+        <input type="text" id="leaderFullName" name="leaderFullName" [ngModel]="formData.leaderFullName" required>
       </div>
       <div>
         <label for="leaderCollegeName">Leader College Name:</label>
-        <input type="text" id="leaderCollegeName" name="leaderCollegeName" ngModel required>
+        <input type="text" id="leaderCollegeName" name="leaderCollegeName" [ngModel]="formData.leaderCollegeName" ngModel required>
       </div>
       <div>
         <label for="leaderDepartment">Leader Department:</label>
-        <input type="text" id="leaderDepartment" name="leaderDepartment" ngModel required>
+        <input type="text" id="leaderDepartment" name="leaderDepartment" [ngModel]="formData.leaderDept" required>
       </div>
       <div>
         <label for="leaderEnrollmentNumber">Leader Enrollment Number:</label>
-        <input type="text" id="leaderEnrollmentNumber" name="leaderEnrollmentNumber" ngModel required>
+        <input type="text" id="leaderEnrollmentNumber" name="leaderEnrollmentNumber" [ngModel]="formData.leaderEnrollment" required>
       </div>
   
       <!-- Member Details -->
       <h3>Member Details</h3>
       <div>
         <label for="memberEmail">Member Email:</label>
-        <input type="email" id="memberEmail" name="memberEmail" ngModel required>
+        <input type="email" id="memberEmail" name="memberEmail" [ngModel]="formData.memberEmail">
       </div>
       <div>
         <label for="memberMobile">Member Mobile:</label>
-        <input type="tel" id="memberMobile" name="memberMobile" ngModel required>
+        <input type="tel" id="memberMobile"  name="memberMobile" [ngModel]="formData.memberMobile">
       </div>
       <div>
         <label for="memberFullName">Member Full Name:</label>
-        <input type="text" id="memberFullName" name="memberFullName" ngModel required>
+        <input type="text" id="memberFullName" name="memberFullName" [ngModel]="formData.memberFullName" >
       </div>
       <div>
         <label for="memberCollegeName">Member College Name:</label>
-        <input type="text" id="memberCollegeName" name="memberCollegeName" ngModel required>
+        <input type="text" id="memberCollegeName" name="memberCollegeName" [ngModel]="formData.memberCollegeName">
       </div>
       <div>
         <label for="memberDepartment">Member Department:</label>
-        <input type="text" id="memberDepartment" name="memberDepartment" ngModel required>
+        <input type="text" id="memberDepartment" name="memberDepartment" [ngModel]="formData.memberDept">
       </div>
       <div>
         <label for="memberEnrollmentNumber">Member Enrollment Number:</label>
-        <input type="text" id="memberEnrollmentNumber" name="memberEnrollmentNumber" ngModel required>
+        <input type="text" id="memberEnrollmentNumber" name="memberEnrollmentNumber" [ngModel]="formData.memberEnrollment">
       </div>
     </fieldset>
   

@@ -18,11 +18,11 @@ goto(url:string)
   this.router.navigate([url])
 }
   events = [
-    { name: 'DevQ', image: 'assets/images/webdev.jpg' },
-    { name: 'Tech Titan Techdown', image: 'assets/images/cyber.jpg' },
-    { name: 'Tech For Eye', image: 'assets/images/techphoto.jpg' },
-    { name: 'Yukti Yagna', image: 'assets/images/techquiz.jpg',routerLink:'/yuktiyagna' },
-    { name: 'Coders Brawl', image: 'assets/images/codersbrawl.jpg' }
+    { name: 'Orion', image: '' },
+    { name: 'Tech Titan Techdown', image: '' },
+    { name: 'Tech For Eye', image: '' },
+    { name: 'Yukti Yagna', image: '',routerLink:'/yuktiyagna' },
+    { name: 'Coders Brawl', image: '' }
   ];
 
   getCircleStyle(index: number) {

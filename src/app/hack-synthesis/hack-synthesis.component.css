@@ -75,6 +75,15 @@
 }
 
 
+.moving-gear>i{
+  font-size: 200px;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+}
+
 
 .prop-image{
     position: absolute;
@@ -86,6 +95,12 @@
     width: 200px;
 }
 
+/* Rotate Image */
+.rotate-image {
+  width: 200px; /* Set your desired width */
+  animation: moveRotateDiagonal 12s linear infinite; /* Continuous rotation */
+}
+
 @media (max-width: 768px) {
     .prop-image{
         left: 75%;
@@ -94,4 +109,29 @@
     .prop-image > img{
         width: 75px;
     }
+}
+
+/* animations */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+@keyframes moveRotateDiagonal {
+  0% {
+      top: 0;
+      left: 0;
+      transform: rotate(0deg);
+  }
+  50% {
+      top: calc(100vh - 100px); /* Move to the bottom-right corner */
+      left: calc(100vw - 100px);
+      transform: rotate(180deg); /* Rotate halfway */
+  }
+  100% {
+      top: 0;
+      left: 0;
+      transform: rotate(360deg); /* Complete the full rotation */
+  }
 }
