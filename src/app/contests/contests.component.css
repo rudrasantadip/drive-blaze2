@@ -22,6 +22,7 @@
 }
 
 .orbit-circle {
+  cursor: pointer;
   background: linear-gradient(lime,gold);
   border-radius:50%;
   position: absolute;

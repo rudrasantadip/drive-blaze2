@@ -1,0 +1,76 @@
+.quiz-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    direction: ltr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2); /* White with 50% transparency */
+  }
+  
+  h1 {
+    text-align: center;
+    color: white;
+  }
+  
+  h2 {
+    text-align: center;
+    color: lime;
+  }
+  
+  .info {
+    font-size: 16px;
+    margin: 20px 0;
+  }
+  
+  .event-details {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h3 {
+    color: lime;
+    margin-top: 20px;
+  }
+  
+  ul, ol {
+    margin: 10px 0;
+    padding-left: 20px;
+    list-style: none;
+    text-transform: uppercase;
+  }
+  
+  .register-button {
+    display: block;
+    width: 75%;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background:linear-gradient(135deg,lime,gold);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    transition: all 0.5s ease-in;
+  }
+  
+  .register-button:hover {
+    width: 100%;
+ 
+  }
+  
+
+  .glow-text {
+    text-decoration: none;
+    color: #ffffff; /* Text color */
+    text-shadow: 
+        0 0 5px rgba(0, 255, 0, 0.7), /* Green inner glow */
+        0 0 10px rgba(0, 255, 0, 0.7), /* Green outer glow */
+        0 0 15px rgba(255, 215, 0, 0.7), /* Gold outer glow */
+        0 0 20px rgba(255, 215, 0, 0.7); /* Stronger gold outer glow */
+}

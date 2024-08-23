@@ -17,7 +17,8 @@ const routes: Routes = [
   },
   {
     path:'hackathon',component:HackSynthesisComponent
-  }
+  },
+  { path: 'yuktiyagna', loadChildren: () => import('./yuktiyagna/yuktiyagna.module').then(m => m.YuktiyagnaModule) },
 ];
 
 @NgModule({

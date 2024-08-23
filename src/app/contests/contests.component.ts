@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contests',
@@ -6,11 +7,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./contests.component.css']
 })
 export class ContestsComponent {
+
+
+constructor(private router:Router) {
+ 
+}
+
+goto(url:string) 
+{
+  this.router.navigate([url])
+}
   events = [
     { name: 'DevQ', image: 'assets/images/webdev.jpg' },
     { name: 'Tech Titan Techdown', image: 'assets/images/cyber.jpg' },
     { name: 'Tech For Eye', image: 'assets/images/techphoto.jpg' },
-    { name: 'Yukti Yagna', image: 'assets/images/techquiz.jpg' },
+    { name: 'Yukti Yagna', image: 'assets/images/techquiz.jpg',routerLink:'/yuktiyagna' },
     { name: 'Coders Brawl', image: 'assets/images/codersbrawl.jpg' }
   ];
 

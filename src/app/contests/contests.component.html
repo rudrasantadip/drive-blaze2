@@ -8,6 +8,7 @@
     <img src="assets/images/logo.png" alt="Logo" />
   </div>
   <div
+    (click)="goto(event.routerLink)"
     *ngFor="let event of events; let i = index"
     class="orbit-circle"
     [ngStyle]="getCircleStyle(i)"
