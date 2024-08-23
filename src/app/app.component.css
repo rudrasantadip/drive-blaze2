@@ -11,6 +11,7 @@
     display: grid;
     grid-template-rows: auto 1fr auto; /* Header, main (scrollable), footer */
     grid-template-columns: 1fr; /* Single column */
+    background: black;
 }
 
 /* header Css */
