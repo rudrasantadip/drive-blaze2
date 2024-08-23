@@ -11,7 +11,7 @@
     display: grid;
     grid-template-rows: auto 1fr auto; /* Header, main (scrollable), footer */
     grid-template-columns: 1fr; /* Single column */
-    background: black;
+    background: linear-gradient(135deg, black , rgba(5, 5, 5, 0.842) );
 }
 
 /* header Css */
