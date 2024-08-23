@@ -1,0 +1,22 @@
+<h3>
+  "DriveBlaze 2024: Dive into thrilling events, from coding contests to
+  cyber security clashes, and ignite your tech passion!"
+</h3>
+
+<div class="circle-container">
+  <div class="center-logo">
+    <img src="assets/images/logo.png" alt="Logo" />
+  </div>
+  <div
+    *ngFor="let event of events; let i = index"
+    class="orbit-circle"
+    [ngStyle]="getCircleStyle(i)"
+  >
+    <div
+      class="circle"
+      [ngStyle]="{ 'background-image': 'url(' + event.image + ')' }"
+    >
+      <div class="event-name glow-text">{{ event.name }}</div>
+    </div>
+  </div>
+</div>

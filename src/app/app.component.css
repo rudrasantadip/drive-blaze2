@@ -19,6 +19,7 @@ header
     grid-row: 1 / 2; /* Places header in the first row */
     color: white;
     text-align: center;
+    z-index: 1000;
 }
 
 header>button{

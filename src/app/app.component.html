@@ -5,12 +5,12 @@
      <app-navigation [showNavBar]="isNavBarOn" (navBarEvent)="navBarStatus($event)"></app-navigation>
    </header>
  
-   <main>
+   <main *ngIf="!isNavBarOn">
      <router-outlet></router-outlet>
    </main>
  
    <footer>
- 
+    <app-footer></app-footer>
    </footer>
  </div>
  </app-video-bg>

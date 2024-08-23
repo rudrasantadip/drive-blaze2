@@ -150,6 +150,7 @@
 .prom-image{
     width: 200px;
     object-fit: contain;
+    z-index: -1;
 }
 
 .prom-image > img{
@@ -157,6 +158,7 @@
 }
 
 .prom-images{
+    margin-top: 35px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

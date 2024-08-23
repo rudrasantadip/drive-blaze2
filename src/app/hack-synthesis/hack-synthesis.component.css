@@ -1,0 +1,97 @@
+.hackathon-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    color: var(--premiumwhite);
+  }
+  
+  .timeline {
+    margin: 20px 0;
+  }
+  
+  .timeline-item {
+    background: transparent;
+    border-left: 4px solid limegreen;
+    padding: 10px;
+    margin: 10px 0;
+    transition: all 0.3s ease-in
+  }
+
+  .timeline-item:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  
+  .timeline-item h2 {
+    margin: 0;
+    color: var(--premiumwhite)
+  }
+  
+  .prize-pool, .rules-regulations {
+    margin: 20px 0;
+  }
+  
+  .prize-pool h2, .rules-regulations h2 {
+    color: limegreen;
+  }
+  
+  .rules-regulations ul {
+    list-style: none;
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+  
+  .register-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: limegreen;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .register-button:hover {
+    background-color: limegreen;
+  }
+  
+
+  .glow-text {
+    text-decoration: none;
+    color: #ffffff; /* Text color */
+    text-shadow: 
+        0 0 5px rgba(0, 255, 0, 0.7), /* Green inner glow */
+        0 0 10px rgba(0, 255, 0, 0.7), /* Green outer glow */
+        0 0 15px rgba(255, 215, 0, 0.7), /* Gold outer glow */
+        0 0 20px rgba(255, 215, 0, 0.7); /* Stronger gold outer glow */
+}
+
+
+
+.prop-image{
+    position: absolute;
+    z-index: -1;
+    top: 15%;
+    left: 65%;    
+}
+.prop-image > img{
+    width: 200px;
+}
+
+@media (max-width: 768px) {
+    .prop-image{
+        left: 75%;
+    }
+
+    .prop-image > img{
+        width: 75px;
+    }
+}

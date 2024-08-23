@@ -1,5 +1,7 @@
 .layout-container{
     display: flex;
+    z-index: 1000;
+   
 }
 
 
@@ -7,6 +9,11 @@
 .logo{
     object-fit: contain;
 }
+
+.logo:hover{
+    cursor: pointer;
+}
+
 .logo > img{
     width: 100px;
 }
@@ -67,9 +74,11 @@
 
 .hidenav{
     display: none;
+    z-index: 1000;
 }
 .shownav{
     display: flex;
+    z-index: 1000;
 }
 
 

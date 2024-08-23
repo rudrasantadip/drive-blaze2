@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,13 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 export class HomeComponent {
 
 
- 
+  constructor(private router:Router)
+  {}
+  
+  goto(url:string)
+  {
+    this.router.navigate([url]);
+  }
 
   
 }

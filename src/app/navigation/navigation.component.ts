@@ -2,6 +2,7 @@ import { HostListener, OnInit, Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
 import { Input } from '@angular/core';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navigation',
@@ -9,6 +10,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent implements OnInit {
+
+constructor(private router:Router) {
+}
+
+
+goto(arg0: string) {
+  this.router.navigate([arg0]);
+}
 
 screenWidth:number;
 
