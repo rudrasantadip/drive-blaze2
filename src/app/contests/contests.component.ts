@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contests',
@@ -19,10 +19,10 @@ goto(url:string)
 }
   events = [
     { name: 'Orion', image: '' },
-    { name: 'Tech Titan Techdown', image: '' },
-    { name: 'Tech For Eye', image: '' },
+    { name: 'Tech Titan Techdown', image: '',routerLink:'/techtitantakedown' },
+    { name: 'Tech For Eye', image:'',routerLink:'/techforeye' },
     { name: 'Yukti Yagna', image: '',routerLink:'/yuktiyagna' },
-    { name: 'Coders Brawl', image: '' }
+    { name: 'Algo Arcade', image: '', routerLink:'/algoarcade'}
   ];
 
   getCircleStyle(index: number) {

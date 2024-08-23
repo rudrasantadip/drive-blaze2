@@ -14,6 +14,6 @@ export class HomeComponent {
   }
 
   register() {
-      this.router.navigate(['yuktiyagna/register']);
+     window.location.href='https://docs.google.com/forms/d/e/1FAIpQLScPTJHWvW2143YlatEuHfTX1OgreIMgtniYsMTf31jglawK-Q/viewform';
   }
 }

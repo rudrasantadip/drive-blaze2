@@ -3,13 +3,12 @@ import { CommonModule } from '@angular/common';
 import {FormsModule} from '@angular/forms'
 import { YuktiyagnaRoutingModule } from './yuktiyagna-routing.module';
 import { HomeComponent } from './home/home.component';
-import { RegisterComponent } from './register/register.component';
+
 
 
 @NgModule({
   declarations: [
-    HomeComponent,
-    RegisterComponent
+    HomeComponent
   ],
   imports: [
     CommonModule,

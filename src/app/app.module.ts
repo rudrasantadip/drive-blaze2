@@ -11,7 +11,10 @@ import { ContestsComponent } from './contests/contests.component';
 import { HackSynthesisComponent } from './hack-synthesis/hack-synthesis.component';
 import { AboutComponent } from './about/about.component';
 
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { TechtitantakedownComponent } from './techtitantakedown/techtitantakedown.component';
+import { CodersbrawlComponent } from './codersbrawl/codersbrawl.component';
+import { TechphotographyComponent } from './techphotography/techphotography.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import {HttpClientModule} from '@angular/common/http'
     FooterComponent,
     ContestsComponent,
     HackSynthesisComponent,
-    AboutComponent
+    AboutComponent,
+    TechtitantakedownComponent,
+    CodersbrawlComponent,
+    TechphotographyComponent
   ],
   imports: [
     BrowserModule,

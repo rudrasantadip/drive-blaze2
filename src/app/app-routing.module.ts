@@ -4,6 +4,9 @@ import { HomeComponent } from './home/home.component';
 import { ContestsComponent } from './contests/contests.component';
 import { HackSynthesisComponent } from './hack-synthesis/hack-synthesis.component';
 import { AboutComponent } from './about/about.component';
+import { TechtitantakedownComponent } from './techtitantakedown/techtitantakedown.component';
+import { CodersbrawlComponent } from './codersbrawl/codersbrawl.component';
+import { TechphotographyComponent } from './techphotography/techphotography.component';
 
 const routes: Routes = [
   {
@@ -29,10 +32,20 @@ const routes: Routes = [
     component: HackSynthesisComponent,
   },
   {
+    path:'techtitantakedown',
+    component: TechtitantakedownComponent
+  },
+  {
     path: 'yuktiyagna',
     loadChildren: () =>
       import('./yuktiyagna/yuktiyagna.module').then((m) => m.YuktiyagnaModule),
   },
+  {
+    path:'algoarcade',component:CodersbrawlComponent
+  },
+  {
+    path:'techforeye',component:TechphotographyComponent
+  }
 ];
 
 @NgModule({
