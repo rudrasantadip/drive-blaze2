@@ -7,6 +7,7 @@ import { AboutComponent } from './about/about.component';
 import { TechtitantakedownComponent } from './techtitantakedown/techtitantakedown.component';
 import { CodersbrawlComponent } from './codersbrawl/codersbrawl.component';
 import { TechphotographyComponent } from './techphotography/techphotography.component';
+import { OrionComponent } from './orion/orion.component';
 
 const routes: Routes = [
   {
@@ -45,6 +46,9 @@ const routes: Routes = [
   },
   {
     path:'techforeye',component:TechphotographyComponent
+  },
+  {
+    path:'orion',component:OrionComponent
   }
 ];
 

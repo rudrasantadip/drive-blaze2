@@ -18,7 +18,7 @@ goto(url:string)
   this.router.navigate([url])
 }
   events = [
-    { name: 'Orion', image: '' },
+    { name: 'Orion', image: '',routerLink:'/orion' },
     { name: 'Tech Titan Techdown', image: '',routerLink:'/techtitantakedown' },
     { name: 'Tech For Eye', image:'',routerLink:'/techforeye' },
     { name: 'Yukti Yagna', image: '',routerLink:'/yuktiyagna' },
