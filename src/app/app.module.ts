@@ -14,7 +14,8 @@ import { AboutComponent } from './about/about.component';
 import {HttpClientModule} from '@angular/common/http';
 import { TechtitantakedownComponent } from './techtitantakedown/techtitantakedown.component';
 import { CodersbrawlComponent } from './codersbrawl/codersbrawl.component';
-import { TechphotographyComponent } from './techphotography/techphotography.component'
+import { TechphotographyComponent } from './techphotography/techphotography.component';
+import { OrionComponent } from './orion/orion.component'
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { TechphotographyComponent } from './techphotography/techphotography.comp
     AboutComponent,
     TechtitantakedownComponent,
     CodersbrawlComponent,
-    TechphotographyComponent
+    TechphotographyComponent,
+    OrionComponent
   ],
   imports: [
     BrowserModule,
