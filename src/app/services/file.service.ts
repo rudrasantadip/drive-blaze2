@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class FileService {
 
-  private apiUrl:string='http://localhost:5000/upload';
+  private apiUrl:string='https://ae17-45-112-240-54.ngrok-free.app/upload';
 
   constructor(private http:HttpClient) 
   {
