@@ -12,6 +12,8 @@ import { HackSynthesisComponent } from './hack-synthesis/hack-synthesis.componen
 import { AboutComponent } from './about/about.component';
 
 import {HttpClientModule} from '@angular/common/http';
+import { NgxUiLoaderHttpModule, NgxUiLoaderModule, NgxUiLoaderRouterModule } from "ngx-ui-loader";
+
 import { TechtitantakedownComponent } from './techtitantakedown/techtitantakedown.component';
 import { CodersbrawlComponent } from './codersbrawl/codersbrawl.component';
 import { TechphotographyComponent } from './techphotography/techphotography.component';
@@ -37,7 +39,10 @@ import { ContactComponent } from './contact/contact.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxUiLoaderModule,
+    NgxUiLoaderRouterModule,
+    NgxUiLoaderHttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

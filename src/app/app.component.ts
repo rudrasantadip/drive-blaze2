@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
+import { NgxUiLoaderService } from 'ngx-ui-loader';
 
 @Component({
   selector: 'app-root',
@@ -13,8 +14,15 @@ export class AppComponent implements OnInit {
   isNavBarOn: boolean = false;
   title = 'drive-blaze';
 
+  constructor(private ngxService: NgxUiLoaderService) {}
+
   ngOnInit(): void {
     this.screenWidth = window.innerWidth;
+    this.ngxService.start(); // start foreground spinner of the master loader with 'default' taskId
+    // Stop the foreground loading after 5s
+    setTimeout(() => {
+      this.ngxService.stop(); // stop foreground spinner of the master loader with 'default' taskId
+    }, 5000);
   }
 
 
