@@ -1,3 +1,26 @@
+.background-container {
+    position: relative;
+    height: 100vh;
+    background-image: url('/assets/images/bg.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .blur-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px); /* Adjust the blur value as needed */
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    color: white; /* Or any color that contrasts with the background */
+  }
+
 
 /* Root Container */
 .container-fluid{
@@ -11,7 +34,6 @@
     display: grid;
     grid-template-rows: auto 1fr auto; /* Header, main (scrollable), footer */
     grid-template-columns: 1fr; /* Single column */
-    background: linear-gradient(135deg, black , rgba(5, 5, 5, 0.842) );
 }
 
 /* header Css */

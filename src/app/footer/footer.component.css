@@ -1,11 +1,8 @@
 .layout-container{
-    height: 80px;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 1000;
-    transition: all 0.3s ease-in;
 }
 
 .layout-container:hover{
@@ -23,33 +20,6 @@
 .layout-container::-webkit-scrollbar {
     width: 0px; /* Adjust the width as needed */
   }
-
-.widgets{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 13px;
-}
-
-.contact ul {
-    list-style: none;
-}
-
-.contact > ul > li > a{
-    text-decoration: none;
-    color: white;
-}
-
-.contact > ul > li > a>span{
-    margin-left: 12px;
-    margin-right: 12px;
-}
-
-h3{
-    font-size: 16px;
-}
-
 
 @media (max-width: 768px) {
     .layout-container{

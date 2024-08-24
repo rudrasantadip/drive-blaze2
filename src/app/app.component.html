@@ -1,14 +1,22 @@
-<div class="container-fluid" [ngClass]="isNavBarOn?'navon':'navoff'">
-  <header>
-   <button *ngIf="!isNavBarOn" (click)="openNav()"><i class="fa-solid fa-bars" style="color: white;"></i></button>
-   <app-navigation [showNavBar]="isNavBarOn" (navBarEvent)="navBarStatus($event)"></app-navigation>
- </header>
 
- <main *ngIf="!isNavBarOn">
-   <router-outlet></router-outlet>
- </main>
 
- <footer>
-  <app-footer></app-footer>
- </footer>
+<div class="background-container">
+  <div class="blur-overlay"></div>
+  <div class="content">
+    <div class="container-fluid" [ngClass]="isNavBarOn?'navon':'navoff'">
+      <header>
+       <button *ngIf="!isNavBarOn" (click)="openNav()"><i class="fa-solid fa-bars" style="color: white;"></i></button>
+       <app-navigation [showNavBar]="isNavBarOn" (navBarEvent)="navBarStatus($event)"></app-navigation>
+     </header>
+    
+     <main *ngIf="!isNavBarOn">
+       <router-outlet></router-outlet>
+     </main>
+    
+     <footer>
+      <app-footer></app-footer>
+     </footer>
+    </div>
+    
+  </div>
 </div>
