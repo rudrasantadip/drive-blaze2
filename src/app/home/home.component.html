@@ -1,5 +1,12 @@
 <div class="layout-container">
-  <div class="containers container1">
+
+
+  <div class="background">
+    <img src="/assets/images/removedarc.png" alt="" />
+  </div>
+
+
+  <div class="containers">
     <div class="logo">
       <img src="/assets/images/home.png" alt="" (click)="goto('/about')" />
     </div>
@@ -12,18 +19,15 @@
       <h3 class="disappearing-text fade-in">
         28<sup>th</sup> & 29<sup>th</sup> September 2024
       </h3>
-
-      <div class="background">
-        <img src="/assets/images/removedarc.png" alt="" />
-      </div>
-
-      <div class="background2">
-        <img src="/assets/images/removedarc.png" alt="" />
-      </div>
- 
-    <button (click)="goto('/contests')">
-      <span class="text">Go to Events</span>
-    </button>
   </div>
-  <img class="home-rotator" src="/assets/images/removedarc2.png" alt="" />
+  <button (click)="goto('/contests')">
+    <span class="text">Go to Events</span>
+  </button>
+</div>
+
+
+<div class="background2">
+  <img src="/assets/images/removedarc.png" alt="" />
+</div>
+
 </div>

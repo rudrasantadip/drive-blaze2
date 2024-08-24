@@ -5,31 +5,31 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+  align-items: center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; /* Changed to cover to ensure the background fills the area */
 }
 
 .containers {
-  width: 50%;
+  width: 500px;
   height: 100%;
   text-align: center;
   position: relative; /* Added for absolute positioning of background images */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .background, .background2 {
-  position: absolute;
-  top: 0;
-  width: 200%; /* Ensures full coverage */
+  width: 100%; /* Ensures full coverage */
 }
 
 .background {
-  left: -1%;
   animation: rotate 30s infinite linear;
 }
 
 .background2 {
-  right: -40%;
   animation: rotateReverse 30s infinite linear;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .logo > img {
-  width: 85%;
+  width: 600px;
   animation: levitate 3s ease-in-out infinite;
   cursor: pointer;
 }
