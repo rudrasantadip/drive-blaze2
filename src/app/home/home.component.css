@@ -16,6 +16,17 @@
     text-align: center;
 }
 
+.background{
+    z-index: -1;
+    position: absolute;
+    top: 15%;
+    left: 6%;
+}
+
+.background > img{
+    animation: rotate 30s infinite linear;
+}
+
 .gradient-text {
     font-weight: bold;
     background: linear-gradient(90deg, #00ff99, #ffcc00);
@@ -149,7 +160,14 @@
     }
 }
 
-
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
 
 @keyframes buttonAnimation {
     0% {
