@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
     // Stop the foreground loading after 5s
     setTimeout(() => {
       this.ngxService.stop(); // stop foreground spinner of the master loader with 'default' taskId
-    }, 5000);
+    }, 3000);
   }
 
 

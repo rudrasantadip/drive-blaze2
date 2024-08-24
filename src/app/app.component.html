@@ -1,4 +1,29 @@
-<ngx-ui-loader></ngx-ui-loader>
+<ngx-ui-loader
+  [fgsSize]="100" 
+  [bgsSize]="64"
+  [fgsTemplate]="foregroundSpinner"
+  [bgsTemplate]="backgroundSpinner"
+  
+></ngx-ui-loader>
+
+<ng-template #foregroundSpinner>
+	<div class="sk-chase">
+		<div class="sk-chase-dot"></div>
+		<div class="sk-chase-dot"></div>
+		<div class="sk-chase-dot"></div>
+		<div class="sk-chase-dot"></div>
+		<div class="sk-chase-dot"></div>
+		<div class="sk-chase-dot"></div>
+	</div>
+</ng-template>
+
+<ng-template #backgroundSpinner>
+	<div class="la-ball-clip-rotate-multiple la-2x">
+		<div></div>
+		<div></div>
+	</div>
+</ng-template>
+
 
 <div class="background-container">
   <div class="blur-overlay"></div>
