@@ -50,10 +50,10 @@
   .nav-item:after {
     display: block;
     margin: 0 12px;
-    width: 150px;
-    height: 46px;
-    line-height: 46px;
-    font-size: 16px;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
     font-family: "Bebas Neue", sans-serif;
     background: linear-gradient(45deg, transparent 5%, gold 5%);
     border: 0;
