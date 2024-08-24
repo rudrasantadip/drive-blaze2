@@ -3,9 +3,19 @@
     margin: 20px;
 }
 .description > p{
+
     text-align: justify;
 }
 
+
+
 .description > img{
-    width: 100px;
+    margin-top: -7%;
+    width: 250px;
 }
+
+.content-with-border {
+    padding: 20px;
+    border: 10px solid transparent; /* Define the border size */
+    border-image: url('/assets/images/border.png') 30 round; /* Use your image as the border */
+  }

@@ -1,105 +1,81 @@
-.circle-container {
-  position: absolute;
-  top: 45%;
-  left: 45%;
-  transform: translate(-50%,-50%);
+.layout{
+  height: 100%;
+  direction: ltr;
+}
+
+.layout > h3{
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.contests{
+  display: flex;
+  flex-direction: row;
+}
+
+.contest{
+  object-fit: contain;
   width: 400px;
   height: 400px;
-  animation: rotate 20s infinite linear;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.center-logo {
-  position: absolute;
-  top: 63%;
-  left: 63%;
-  transform: translate(-50%, -50%);
+.contest >h3{
+  position: relative;
+  margin-left: 14px;
+  font-weight: 800px;
+}
+
+.contest-text{
+  font-weight: 700;
+}
+
+.content{
+
+}
+
+.background{
   z-index: 1;
-}
-
-.center-logo img {
-  width: 200px;
-  height: 200px;
-}
-
-.orbit-circle {
-  cursor: pointer;
-  background: linear-gradient(lime,gold);
-  border-radius:50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100px;
-  height: 100px;
-  transform-origin: center;
-  text-align: center;
-}
-
-.circle {
   width: 100%;
   height: 100%;
-
-  background-size: cover;
   background-position: center;
-  border-radius: 50%;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+
+
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  color: black;
-  font-size: 12px;
-  text-shadow: 0 0 5px black;
-  padding: 5px;
-  transition: transform 0.5s ease;
 }
 
-.circle:hover {
-  transform: rotate(210deg);
+.background:hover{
+  width: 75%;
+  height: 75%;
+  transform: rotate(12deg);
+  background-size: 150%;
 }
 
-.event-name {
-  color: black;
-  font-weight: bold;
-  position: relative;
-  z-index: 2;
+.background > h3{
+  margin-top: -10px;
+  margin-left: 15px;
 }
-
-.glow-text {
-  text-decoration: none;
-  color:black; /* Text color */
-  text-shadow: 
-      0 0 5px rgba(0, 255, 0, 0.7), /* Green inner glow */
-      0 0 10px rgba(0, 255, 0, 0.7), /* Green outer glow */
-      0 0 15px rgba(255, 215, 0, 0.7), /* Gold outer glow */
-      0 0 20px rgba(255, 215, 0, 0.7); /* Stronger gold outer glow */
-}
-
-h3{
-  text-transform: uppercase;
-  font-weight: normal;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
-}
-
 
 
 @media (max-width: 768px) {
-
-  .center-logo{
-    top: 60%;
-    left: 60%;
+  .contests{
+    flex-direction: column;
+    align-items: center;
   }
 
-  .circle-container{
-    position: absolute;
-    left: 38%;
-  }
-
-  h3{
-    margin-top: 56px;
-  }
-
-  .orbit-circle {
-    width: 100px;
-    height: 100px;
+  .contest{
+    width: 200px;
+    height: 200px;
   }
 }
-
-

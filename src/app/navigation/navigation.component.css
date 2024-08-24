@@ -58,7 +58,7 @@
 .nav-item:hover{
     transform: scale(1.05);
     box-shadow: 
-    0 0 10px rgba(0, 255, 0, 0.5), /* Green glow */
+    0 0 10px aqua, /* Green glow */
     0 0 20px rgba(255, 255, 0, 0.5); /* Gold glow */
 }
 
@@ -66,8 +66,8 @@
     text-decoration: none;
     color: #ffffff; /* Text color */
     text-shadow: 
-        0 0 5px rgba(0, 255, 0, 0.7), /* Green inner glow */
-        0 0 10px rgba(0, 255, 0, 0.7), /* Green outer glow */
+        0 0 5px aqua, /* Green inner glow */
+        0 0 10px aqua, /* Green outer glow */
         0 0 15px rgba(255, 215, 0, 0.7), /* Gold outer glow */
         0 0 20px rgba(255, 215, 0, 0.7); /* Stronger gold outer glow */
 }

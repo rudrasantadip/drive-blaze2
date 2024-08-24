@@ -130,6 +130,8 @@ footer{
 
 
 
+
+
 sk-chase {
     width: 100px;
     height: 100px;
@@ -151,7 +153,7 @@ sk-chase {
     display: block;
     width: 25%;
     height: 25%;
-    background:linear-gradient(lime,gold);
+    background:linear-gradient(aqua,gold);
     border-radius: 100%;
     animation: sk-chase-dot-before 2s infinite ease-in-out both;
   }

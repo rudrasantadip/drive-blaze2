@@ -1,23 +1,12 @@
-<h3>
-  "DriveBlaze 2024: Dive into thrilling events, from coding contests to
-  cyber security clashes, and ignite your tech passion!"
-</h3>
+<div class="layout">
+  <h3>Participate in thrilling contests organized by DriveBlaze</h3>
+  <h4>Win Exotic Cash Prizes , Goodies & Swags</h4>
 
-<div class="circle-container">
-  <div class="center-logo">
-    <img src="assets/images/logo.png" alt="Logo" />
-  </div>
-  <div
-    (click)="goto(event.routerLink)"
-    *ngFor="let event of events; let i = index"
-    class="orbit-circle"
-    [ngStyle]="getCircleStyle(i)"
-  >
-    <div
-      class="circle"
-      [ngStyle]="{ 'background-image': 'url(' + event.image + ')' }"
-    >
-      <div class="event-name glow-text">{{ event.name }}</div>
+ 
+  <div class="contests">
+    <div class="contest" *ngFor="let event of events" (click)="goto(event.routerLink)">
+      <div class="background" [style.backgroundImage]="'url(' + event.image + ')'" >
+      </div>
     </div>
   </div>
 </div>

@@ -2,17 +2,23 @@
 html, body {
     height: 100%;
     margin: 0;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body{
     margin: 0;
     padding: 0;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
-    z-index: -1000;
     background: black;
 }
+
+h1,h2,h3{
+  font-weight: 700;
+}
+
 
 ::-webkit-scrollbar {
     width: 4px; /* Adjust the width as needed */
