@@ -93,7 +93,7 @@ footer{
 
 
 /* Responsive layout for mobile */
-@media (max-width: 768px) {
+@media (max-width: 1048px) {
 
     header> button{
         display: block;

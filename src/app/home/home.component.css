@@ -1,274 +1,194 @@
-.layout-container
-{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+/* Base styles for larger screens */
+.layout-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Changed to cover to ensure the background fills the area */
 }
 
-.containers{
-    width: 50%;
-    height: 100%;
-    text-align: center;
+.containers {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  position: relative; /* Added for absolute positioning of background images */
 }
 
-.background{
-    z-index: -1;
-    position: absolute;
-    top: 0%;
-    left: -1%;
-}
-
-.background2{
+.background, .background2 {
   position: absolute;
-  top: 0%;
-  right:-40%;
+  top: 0;
+  width: 200%; /* Ensures full coverage */
 }
 
-.background > img{
-    animation: rotate 30s infinite linear;
-    width: 200%;
+.background {
+  left: -1%;
+  animation: rotate 30s infinite linear;
 }
 
-.background2 > img{
+.background2 {
+  right: -40%;
   animation: rotateReverse 30s infinite linear;
-    width: 200%;
 }
 
-.background > img:hover{
-    animation-play-state: paused;
+.home-rotator {
+  z-index: -1000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(5px);
 }
-
-.home-rotator{
-    z-index: -1000;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    filter: blur(5px);
-}
-
-
 
 .gradient-text {
-    font-weight: bold;
-    background: linear-gradient(90deg, aqua, #ffcc00);
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-
-.logo > img{
-    width: 85%;
-    animation: levitate 3s ease-in-out infinite;
-    cursor: pointer;
+  font-weight: bold;
+  background: linear-gradient(90deg, aqua, #ffcc00);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
-.logo-text > h2{
-    text-transform: uppercase;
-    font-weight: 700;
+.logo > img {
+  width: 85%;
+  animation: levitate 3s ease-in-out infinite;
+  cursor: pointer;
 }
 
-  
-  @keyframes levitate {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px); /* Move up by 10px */
-    }
-  }
-  
-
-
-.gradient-button {
-    width: 200px;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    color: black;
-    background: linear-gradient(90deg, aqua, #ffdd00);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    overflow: hidden;
-    transition: all 0.5s ease;
-    background-size: 200% 200%;
+.logo-text > h2 {
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
-.gradient-button:hover {
-    width: 300px;
-    background-size: 200% 200%;
+@keyframes levitate {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
 
-.description{
-    margin: 12px;
+.description > p {
+  text-align: center;
 }
 
-.description > p
-{
-    text-align: center;
-}
-
-
-/* amimatopms */
 .fade-in {
-    opacity: 0;
-    animation: fadeIn 3s forwards; /* Adjust duration as needed */
+  opacity: 0;
+  animation: fadeIn 3s forwards;
 }
 
-
-.button-appear {
-    transition: all 0.5s ease-in;
-    width: 200px;
-    display: inline-block;
-    background: linear-gradient(45deg, #fbff00, aqua);
-    border: none;
-    border-radius: 8px;
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 15px 30px;
-    cursor: pointer;
-    text-transform: uppercase;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    animation: buttonAnimation 1s ease-out forwards;
-    animation-delay: 1s; /* Adjust delay to suit your needs */
+.decor {
+  width: 45%;
+  position: absolute;
+  right: -6%;
+  top: 22%;
 }
 
-.button-appear:hover{
-    width: 300px;
-}
-
-
-.decor{
-    width: 45%;
-    position: absolute;
-    right: -6%;
-    top: 22%;
-}
-
-
-/* media queries from here */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 @keyframes rotateReverse {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
 }
 
-@keyframes buttonAnimation {
-    0% {
-        transform: scale(0.5);
-        opacity: 0;
-    }
-    50% {
-        transform: scale(1.1);
-        opacity: 0.7;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
 }
 
+.button-63 { 
+  background-image: linear-gradient(144deg,#148af8, #5B42F3 50%,#00DDEB);
+  border: none;
+  border-radius: 25%;
+}
+
+.button-63:active,
+.button-63:hover {
+  outline: 0;
+}
+
+@media (max-width: 480px) {
+  .layout-container {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center; /* Center text for small screens */
+      justify-content: center;
+      height: auto; /* Allow content to expand naturally */
+  }
+
+  .containers {
+      width: 100%;
+      height: auto;
+  }
+
+  .background, .background2 {
+      display: none; /* Hide background elements on very small screens */
+  }
+
+  .logo > img {
+      width: 100%;
+  }
+
+  .home-rotator {
+      filter: none; /* Remove blur for smaller screens if needed */
+  }
+}
 
 @media (max-width: 768px) {
-    .layout-container{
-        flex-direction: column-reverse;
-        align-items: center;
-        text-align: justify;
-        justify-content: center;
-    }
+  .layout-container {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: justify;
+      justify-content: center;
+      height: auto; /* Allow content to expand naturally */
+  }
 
-    .background{
-      display: none;
-    }
+  .containers {
+      width: 100%;
+      height: auto;
+  }
 
-    .background2{
-      display: none;
-    }
+  .background, .background2 {
+      display: none; /* Hide background elements on smaller screens */
+  }
 
-    .menu-container{
-        display: none;
-    }
+  .logo > img {
+      width: 100%;
+  }
 
-    .menu-item{
-        display: none;
-        width: 35px;
-        height: 35px;
-    }
-    .menu-item > h2{
-        font-size: 12px;
-    }
+  .home-rotator {
+      filter: none; /* Remove blur if necessary */
+  }
 }
 
-/* Media Query for Smaller Laptops (e.g., 1024px and below) */
-@media screen and (max-width: 1024px) {
-    .layout-container {
-      flex-direction: column;
+@media (min-width: 769px) and (max-width: 1048px) {
+  .layout-container {
+      flex-direction: column-reverse;
       align-items: center;
-      padding: 10px;
-    }
-  
-    .containers.container1 {
-      width: 100%;
       text-align: center;
-    }
-  
-    .logo img {
-      max-width: 80%;
-      margin-bottom: 20px;
-    }
-  
-    .logo-text h2, .logo-text h3 {
-      font-size: 1.5rem;
-    }
-  
-    .button {
-      margin-top: 20px;
-    }
-  
-    .home-rotator {
-      width: 150px;
-    }
+      justify-content: center;
+      height: auto; /* Allow content to expand naturally */
   }
 
-.typewriter {
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 2px solid;
-    width: fit-content;
-    animation: blink-caret 0.75s step-end infinite;
+  .containers {
+      width: 100%;
+      height: auto;
   }
-  
-  /* Blinking cursor animation */
-  @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: black; }
+
+  .background {
+      display: none; /* Hide background elements on smaller laptops */
   }
-  
+
+  .background2 {
+      display: none; /* Hide additional background elements */
+  }
+
+  .logo > img {
+      width: 100%;
+  }
+}

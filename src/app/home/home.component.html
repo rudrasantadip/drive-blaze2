@@ -1,42 +1,29 @@
-
-
 <div class="layout-container">
   <div class="containers container1">
     <div class="logo">
-      <img src="/assets/images/home.png" alt="" (click)="goto('/about')">
+      <img src="/assets/images/home.png" alt="" (click)="goto('/about')" />
     </div>
     <div class="logo-text">
       <h2 class="shiny-text disappearing-text fade-in">
-        Experience the future <span  class="gradient-text typewriter">{{displayText}}</span> & <span class="gradient-text2">beyond</span>
+        Experience the future
+        <span class="gradient-text typewriter">{{ displayText }}</span> &
+        <span class="gradient-text2">beyond</span>
       </h2>
       <h3 class="disappearing-text fade-in">
-        28<sup>th</sup>  & 29<sup>th</sup> September 2024
+        28<sup>th</sup> & 29<sup>th</sup> September 2024
       </h3>
 
       <div class="background">
-        <img src="/assets/images/removedarc.png" alt="">
+        <img src="/assets/images/removedarc.png" alt="" />
       </div>
 
       <div class="background2">
-        <img src="/assets/images/removedarc.png" alt="">
+        <img src="/assets/images/removedarc.png" alt="" />
       </div>
-
-
-    </div>
-    <div class="button">
-      <button 
-      (click)="goto('/contests')"
-      class="gradient-button button-appear">Go To Events</button>
-    </div>
+ 
+    <button (click)="goto('/contests')">
+      <span class="text">Go to Events</span>
+    </button>
   </div>
-  <img class="home-rotator" src="/assets/images/removedarc2.png" alt="">
+  <img class="home-rotator" src="/assets/images/removedarc2.png" alt="" />
 </div>
-
-
-
-
-
-
-
-
-
