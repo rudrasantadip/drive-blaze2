@@ -1,26 +1,244 @@
 .widgets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     direction: ltr;
+}
+
+.heading > h3{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
     width: 100%;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.social-media
+{
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social-media > .layer
+{
+    width: 100%;
+}
+
+
+.layer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 13px;
+    align-items: center;
 }
 
-.contact ul {
-    list-style: none;
+.two{
+    justify-content: center !important;
 }
 
-.contact > ul > li > a{
+.layer > div{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    align-items: center;
     text-decoration: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(#00aDef,#1De8ac);
+    box-shadow: 2px 2px 5px #00aDef, 0 0 10px #1De8ac;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.links:hover{
+   transform: scale(1.1);
+   box-shadow: 2px 2px 5px #1De8ac, 0 0 10px #00aDef;
+}
+
+
+.layer > div > a{
     color: white;
 }
 
-.contact > ul > li > a>span{
-    margin-left: 12px;
-    margin-right: 12px;
+.layer > div> a >i{
+    font-size: 30px;
 }
 
-h3{
-    font-size: 16px;
+
+.contact-team{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-card {
+    width: 200px;
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.contact-card h2 {
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    color: white;
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.whatsapp-link {
+    display: inline-block;
+    background:linear-gradient(#00aDef,#1De8ac);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-link:hover {
+    background:linear-gradient(#1De8ac,#00aDef);
+}
+
+
+@media (max-width: 1024px) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .social-media, .contact-team {
+        max-width: 100%;
+    }
+
+    .row {
+        justify-content: center;
+    }
+
+    .layer > div {
+        width: 65px;
+        height: 65px;
+    }
+
+    .layer > div > a > i {
+        font-size: 25px;
+    }
+
+    .contact-team{
+        margin-top: 22px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .contact-team{
+        margin-top: 22px;
+    }
+
+    .layer {
+        justify-content: space-around;
+    }
+
+    .layer > div {
+        width: 55px;
+        height: 55px;
+    }
+
+    .layer > div > a > i {
+        font-size: 20px;
+    }
+
+    .contact-card {
+        max-width: 180px;
+    }
+
+    .contact-card p {
+        font-size: 1em;
+    }
+
+    .whatsapp-link {
+        padding: 8px 15px;
+    }
+
+    .contact-team{
+        margin-top: 22px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .contact-team{
+        margin-top: 22px;
+    }
+
+    .layer {
+        align-items: center;
+    }
+
+    .layer > div {
+        margin-bottom: 10px;
+    }
+
+    .contact-card {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .whatsapp-link {
+        padding: 6px 10px;
+    }
 }

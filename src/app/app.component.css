@@ -4,6 +4,11 @@
     background-image: url('/assets/images/bg.png');
     background-size: cover;
     background-position: center;
+
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
   }
   
   .blur-overlay {
