@@ -1,5 +1,7 @@
 .layout-container {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     z-index: 1000;
     width: 100%;
     padding: 0 10px; /* Add padding for better spacing */
@@ -17,10 +19,23 @@
     justify-content: space-between;
   }
   
-  .logo > img {
-    width: 100px;
+  .images{
+    display: flex;
+    object-fit: contain;
+    align-items: center;
+    justify-content: center;
+
   }
+
+  .logo > .images > img {
+    width: 80px;
+  }
+
   
+  
+  .driveblaze:hover{
+    cursor: pointer;
+  }
   
   .logo > i {
     display: none;

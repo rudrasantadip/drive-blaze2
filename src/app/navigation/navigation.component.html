@@ -1,6 +1,9 @@
 <div [class]="getClass()">
     <div class="logo">
-        <img src="/assets/images/logo.png" alt="" (click)="goto('/home')">
+        <div class="images">
+            <img class="uem" src="/assets/images/uem_white.png" alt="UEM LOGO">
+            <img class="driveblaze" src="/assets/images/logo.png" alt="DRIVE BLAZE" (click)="goto('/home')">
+        </div>
         <button (click)="closeButton()">
             <i style="color: white;" class="fa-solid fa-x" ></i>
         </button> 

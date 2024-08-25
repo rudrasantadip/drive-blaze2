@@ -17,6 +17,7 @@ constructor(private router:Router) {
 
 goto(arg0: string) {
   this.router.navigate([arg0]);
+  this.closeButton();
 }
 
 screenWidth:number;
