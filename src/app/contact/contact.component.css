@@ -38,10 +38,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 25px;
 }
 
 .two{
-    justify-content: center !important;
+    
 }
 
 .layer > div{
@@ -165,7 +166,7 @@
     }
 
     .contact-team{
-        margin-top: 22px;
+        margin-top: 40px;
     }
 
 }
@@ -208,7 +209,7 @@
     }
 
     .contact-team{
-        margin-top: 22px;
+        margin-top: 40px;
     }
 
 }
@@ -222,7 +223,7 @@
     }
 
     .contact-team{
-        margin-top: 22px;
+        margin-top: 40px;
     }
 
     .layer {
