@@ -43,7 +43,7 @@ this.navBarEvent.emit(false);
 
 getClass():string
 {
-  if(this.screenWidth>=1048)
+  if(this.screenWidth>=1148)
   {
     return 'layout-container';
   }

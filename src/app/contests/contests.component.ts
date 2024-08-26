@@ -30,7 +30,7 @@ export class ContestsComponent {
       name: 'Tech For Eye',
       image: '/assets/images/4.png',
       routerLink:
-        'https://docs.google.com/forms/d/e/1FAIpQLSdgJTnlBCr5SC9AW4juNogHjB37qHldvyvEMzsWk97aKyk9dQ/viewform',
+        'https://docs.google.com/forms/d/e/1FAIpQLScR5QMA9nB1gEJr5cqva78sqGamfJPRzUvYFHdNdK6R2Me_KQ/viewform',
     },
     {
       name: 'Yukti Yagna',

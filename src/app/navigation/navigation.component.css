@@ -27,6 +27,8 @@
 
   }
 
+
+
   .logo > .images > img {
     width: 80px;
   }
@@ -45,7 +47,6 @@
   .nav-items {
     display: flex;
     align-items: center;
-    width: 100%;
   }
   
   .nav-items > ul {
@@ -146,7 +147,7 @@
   
   /* Responsive layout for mobile */
   
-  @media (max-width: 1048px) {
+  @media (max-width: 1148px) {
     .layout-container {
       flex-direction: column;
       height: auto;
