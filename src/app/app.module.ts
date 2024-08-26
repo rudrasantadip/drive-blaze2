@@ -18,7 +18,8 @@ import { TechtitantakedownComponent } from './techtitantakedown/techtitantakedow
 import { CodersbrawlComponent } from './codersbrawl/codersbrawl.component';
 import { TechphotographyComponent } from './techphotography/techphotography.component';
 import { OrionComponent } from './orion/orion.component';
-import { ContactComponent } from './contact/contact.component'
+import { ContactComponent } from './contact/contact.component';
+import { TeamsComponent } from './teams/teams.component'
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ContactComponent } from './contact/contact.component'
     CodersbrawlComponent,
     TechphotographyComponent,
     OrionComponent,
-    ContactComponent
+    ContactComponent,
+    TeamsComponent
   ],
   imports: [
     BrowserModule,

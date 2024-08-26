@@ -9,6 +9,7 @@ import { CodersbrawlComponent } from './codersbrawl/codersbrawl.component';
 import { TechphotographyComponent } from './techphotography/techphotography.component';
 import { OrionComponent } from './orion/orion.component';
 import { ContactComponent } from './contact/contact.component';
+import { TeamsComponent } from './teams/teams.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,10 @@ const routes: Routes = [
     component:ContactComponent
   }
   ,
+  {
+    path:'team',
+    component:TeamsComponent
+  }
   ,
   {
     path: 'contests',
