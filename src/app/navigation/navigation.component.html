@@ -1,24 +1,68 @@
 <div [class]="getClass()">
-    <div class="logo">
-        <div class="images">
-            <img class="uem" src="/assets/images/uem_white.png" alt="UEM LOGO">
-            <img class="driveblaze" src="/assets/images/logo.png" alt="DRIVE BLAZE" (click)="goto('/home')">
-        </div>
-        <button (click)="closeButton()">
-            <i style="color: white;" class="fa-solid fa-x" ></i>
-        </button> 
+  <div class="logo">
+    <div class="images">
+      <img class="uem" src="/assets/images/uem_white.png" alt="UEM LOGO" />
+      <img
+        class="driveblaze"
+        src="/assets/images/logo.png"
+        alt="DRIVE BLAZE"
+        (click)="goto('/home')"
+      />
     </div>
+    <button (click)="closeButton()">
+      <i style="color: white" class="fa-solid fa-x"></i>
+    </button>
+  </div>
 
-    <div class="nav-items">
-        <ul>
-            <li class="nav-item"><a routerLink="/about" (click)="closeButton()"  class="glow-text">About</a></li>
-            <li class="nav-item"><a routerLink="/contests" (click)="closeButton()"   class="glow-text">Contests</a></li>
-            <li class="nav-item"><a class="glow-text" (click)="closeButton()">Workshops</a></li>
-            <li class="nav-item"><a routerLink="/hackathon" (click)="closeButton()" class="glow-text">Hackathons</a></li>
-            <li class="nav-item"><a class="glow-text" (click)="closeButton()">TechTalks</a></li>
-            <li class="nav-item"><a class="glow-text" (click)="closeButton()">Sponsors</a></li>
-            <li class="nav-item"><a routerLink="/contact" class="glow-text" (click)="closeButton()">Contact</a></li>
-            <li class="nav-item"><a routerLink="/team" class="glow-text" (click)="closeButton()">Team</a></li>
-        </ul>
-    </div>
+  <div class="nav-items">
+    <ul>
+      <li class="nav-item">
+        <a routerLink="/about" (click)="closeButton()" class="glow-text"
+          >About</a
+        >
+      </li>
+
+      <li class="nav-item">
+        <a routerLink="/contests" (click)="closeButton()" class="glow-text"
+          >Contests</a
+        >
+      </li>
+
+      <li class="nav-item">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeRJQcub1omqriDFuRbFWcXd2SOocWsJiIOsXJWThXDy5RFQQ/viewform"
+          class="glow-text"
+          (click)="closeButton()"
+          >Workshops</a
+        >
+      </li>
+
+      <li class="nav-item">
+        <a (click)="closeButton()" routerLink="/hackathon" class="glow-text">Hackathons</a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          class="glow-text"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfFhdtcJ0Y8FsWD5gFVnZQnf1ZuTgbHrPKUhqu9nrR259yL6g/viewform"
+          (click)="closeButton()"
+          >TechTalks</a
+        >
+      </li>
+
+      <li class="nav-item">
+        <a class="glow-text" (click)="closeButton()">Sponsors</a>
+      </li>
+
+      <li class="nav-item">
+        <a routerLink="/contact" class="glow-text" (click)="closeButton()"
+          >Contact</a
+        >
+      </li>
+
+      <li class="nav-item">
+        <a routerLink="/team" class="glow-text" (click)="closeButton()">Team</a>
+      </li>
+    </ul>
+  </div>
 </div>

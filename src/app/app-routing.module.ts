@@ -10,6 +10,7 @@ import { TechphotographyComponent } from './techphotography/techphotography.comp
 import { OrionComponent } from './orion/orion.component';
 import { ContactComponent } from './contact/contact.component';
 import { TeamsComponent } from './teams/teams.component';
+import { WorkshopComponent } from './workshop/workshop.component';
 
 const routes: Routes = [
   {
@@ -46,6 +47,10 @@ const routes: Routes = [
   {
     path:'techtitantakedown',
     component: TechtitantakedownComponent
+  },
+  {
+    path:'workshop',
+    component: WorkshopComponent
   },
   {
     path: 'yuktiyagna',

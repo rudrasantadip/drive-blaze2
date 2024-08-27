@@ -21,6 +21,10 @@ export class TeamsComponent
       image:'/assets/images/members/core/4.png'
     },
     {
+      name:'Diptayan Manna',
+      image:'/assets/images/members/core/diptayan.jpeg'
+    },
+    {
       name:'Anuja Roy',
       image:'/assets/images/members/core/8.png'
     },
@@ -36,10 +40,6 @@ export class TeamsComponent
       name:'Anuran Bhowmik',
       image:'/assets/images/members/core/7.png'
     },
-    {
-      name:'Sayan Ghosh',
-      image:'/assets/images/members/core/6.png'
-    }
   ];
 
 
@@ -64,6 +64,10 @@ export class TeamsComponent
       name:'Ayan Koley',
       image:'/assets/images/members/conveynors/5.png'
     },
+    {
+      name:'Sayan Ghosh',
+      image:'/assets/images/members/core/6.png'
+    }
   ]
 
 
