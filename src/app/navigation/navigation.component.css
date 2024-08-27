@@ -30,7 +30,7 @@
 
 
   .logo > .images > img {
-    width: 80px;
+    width: 60px;
   }
 
   
@@ -73,10 +73,10 @@
     margin: 12px 12px;
     padding-left: 6px;
     padding-right:6px;
-    width: 110px;
+    width: 100px;
     height: 40px;
     line-height: 40px;
-    font-size: 14px;
+    font-size: 12px;
     font-family: "Bebas Neue", sans-serif;
     background: linear-gradient(45deg, transparent 5%, gold 5%);
     border: 0;

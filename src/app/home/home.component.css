@@ -60,6 +60,14 @@
   font-weight: 700;
 }
 
+.celebharat{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
 .button-event {
   margin-top: 12px;
   background-image: linear-gradient(92.88deg, #00aDef , #00aDef , #1De8ac);
