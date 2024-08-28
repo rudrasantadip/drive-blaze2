@@ -6,11 +6,19 @@
   <div class="right-side">
     <div class="tabs">
       <button
+      (click)="showSection('info')"
+      [class.active]="selectedSection === 'info'"
+    >
+      General Information
+    </button>
+
+      <button
         (click)="showSection('contact')"
         [class.active]="selectedSection === 'contact'"
       >
         Contact Information
       </button>
+
       <button
         (click)="showSection('rules')"
         [class.active]="selectedSection === 'rules'"
@@ -20,14 +28,24 @@
     </div>
 
     <div class="content">
+      <div *ngIf="selectedSection === 'info'" class="section-content">
+        <h3>General Information</h3>
+        <div class="cards">
+         {{info}}
+        </div>
+      </div>
+
       <div *ngIf="selectedSection === 'contact'" class="section-content">
         <h3>Contact Information</h3>
 
         <div class="cards">
           <div class="card" *ngFor="let c of coordinators">
             <div class="card-content">
-              <h3>{{c.name}}</h3>
-              <p>Phone: <a [href]="'https://wa.me/+91'+c.mobile">{{c.mobile}}</a></p>
+              <h3>{{ c.name }}</h3>
+              <p>
+                Phone:
+                <a [href]="'https://wa.me/+91' + c.mobile">{{ c.mobile }}</a>
+              </p>
             </div>
           </div>
         </div>

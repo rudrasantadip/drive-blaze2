@@ -330,6 +330,14 @@ export class TeamsComponent {
       whatsapp: '8017264492',
     },
     {
+      name: 'Arnabh Sinha',
+      image: '/assets/images/members/coordinators/arnab.jpeg',
+      insta: '',
+      linkedin: '',
+      x: '',
+      whatsapp: '82403 41374',
+    },
+    {
       name: 'Chameli Samanta',
       image: '/assets/images/members/coordinators/2.png',
       insta: '',

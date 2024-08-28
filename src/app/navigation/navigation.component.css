@@ -30,10 +30,14 @@
 
 
 
-  .logo > .images > img {
-    width: 60px;
+  .logo > .images > .image {
+    width: 90px;
+    object-fit: contain;
   }
 
+ .logo > .images > .image > img{
+  width: 80px;
+ }
   
   
   .driveblaze:hover{
@@ -65,7 +69,7 @@
   
   .nav-item:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 10px aqua, 0 0 20px rgba(255, 255, 0, 0.5); /* Glow effect */
+    box-shadow: 0 0 10px white, 0 0 20px rgba(0, 0, 0, 0.5); /* Glow effect */
   }
   
   .nav-item,
@@ -79,11 +83,11 @@
     line-height: 40px;
     font-size: 12px;
     font-family: "Bebas Neue", sans-serif;
-    background: linear-gradient(45deg, transparent 5%, gold 5%);
+    background: linear-gradient(45deg, transparent 5%,#3949ab);
     border: 0;
-    color: #fff;
+    color: #212121;
     letter-spacing: 3px;
-    box-shadow: 6px 0px 0px #00e6f6;
+    box-shadow: 6px 0px 0px rgba(255, 255, 255, 0.6);
     outline: transparent;
     position: relative;
     user-select: none;
@@ -149,11 +153,18 @@
   /* Responsive layout for mobile */
   
   @media (max-width: 1148px) {
+
+    
     .layout-container {
       flex-direction: column;
       height: auto;
       align-items: center;
       padding: 10px;
+    }
+
+    .logo{
+      display: flex;
+      flex-direction: column;
     }
   
     .logo > button {
@@ -162,10 +173,22 @@
       font-weight: bold;
       display: block;
       z-index: 1000;
+
+      position: absolute;
+      top: 10%;
+      right: 5%;
     }
   
-    .logo > img {
-      width: 80px; /* Adjust logo size for smaller screens */
+    .image > img {
+      width: 40px; /* Adjust logo size for smaller screens */
+    }
+
+    .images{
+      flex-wrap: nowrap;
+    }
+
+    .image{
+      width: 50px;
     }
   
     .nav-items > ul {

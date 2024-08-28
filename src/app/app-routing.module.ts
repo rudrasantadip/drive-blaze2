@@ -39,7 +39,7 @@ const routes: Routes = [
   }
   ,
   {
-    path: 'contests',
+    path: 'events',
     component: ContestsComponent,
   },
   ,
@@ -47,7 +47,6 @@ const routes: Routes = [
     path: 'partners',
     component: PartnersComponent,
   },
-  ,
   {
     path: 'event',
     component: EventComponent,

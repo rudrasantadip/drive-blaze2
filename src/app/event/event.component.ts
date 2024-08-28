@@ -17,10 +17,11 @@ gotoUrl(url:string) {
   name:string;
   image:string;
   routerLink:string;
+  info:string;
   rules:string[];
   coordinators:Coordinator[];
 
-  selectedSection: string = 'contact'; // Default to 'contact' section
+  selectedSection: string = 'info'; // Default to 'contact' section
 
   showSection(section: string) {
     this.selectedSection = section;
@@ -42,6 +43,7 @@ gotoUrl(url:string) {
         this.name=atob(params['name']);
         this.image=atob(params['image']);
         this.routerLink=atob(params['routerLink']);
+        this.info=params['info'];
         this.rules=JSON.parse(atob(params['rules']));
         const data = (params['coordinators']);
         if(data)

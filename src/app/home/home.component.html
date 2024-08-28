@@ -1,19 +1,11 @@
 <div class="layout-container">
-  <div class="background">
-    <img src="/assets/images/removedarc.png" alt="DriveBlaze Logo" />
-  </div>
-
-
   <div class="containers">
     <div class="logo">
-      <img src="/assets/images/home1.png" alt="" (click)="goto('/about')" />
+      <img src="/assets/images/full_logo.png" alt="DRIVE_BLAZE_LOGO"/>
+      <h4>The official Technical Magazine of University of Engineering & Management</h4>
+      <h6>In collaboration with the Department of CST & CSIT,University of Engineering & Management, Kolkata</h6>
     </div>
     <div class="logo-text">
-      <h2 class="shiny-text disappearing-text fade-in">
-        Experience the future
-        <span class="gradient-text typewriter">{{ displayText }}</span> &
-        <span class="gradient-text2">beyond</span>
-      </h2>
       <h3 class="disappearing-text fade-in">
         28<sup>th</sup> & 29<sup>th</sup> September 2024
       </h3>
@@ -25,22 +17,5 @@
         <span>{{ seconds | number: '2.0-0' }}</span> seconds
       </div>
   </div>
-  <button class="button-event" (click)="goto('/contests')">
-    <span class="text">Events</span>
-  </button>
-
-  <a class="celebharat button-event" href="https://docs.google.com/forms/d/e/1FAIpQLSdMfQ2ntYK1d5H_NIodkLsiszbzGXqlouPC9Wu9pynW26AT9w/viewform">
-    <span class="text">CeleBharat</span>
-  </a>
-
-  <button class="button-event" style="margin-bottom: 12px;" (click)="goto('/hackathon')">
-    <span class="text">Hackathons</span>
-  </button>
 </div>
-
-
-<div class="background2">
-  <img src="/assets/images/removedarc.png" alt="" />
-</div>
-
 </div>

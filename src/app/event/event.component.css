@@ -2,6 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
+    text-align: justify;
+    font-weight: normal;
   }
   
   .left-side {
@@ -14,13 +16,14 @@
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    width: 400px;
+    width: 300px;
   }
   
   .right-side {
     flex: 2;
     max-width: 60%;
     padding: 20px;
+    direction: ltr;
   }
   
   .tabs {
@@ -65,6 +68,9 @@
     animation: fadeIn 0.3s ease-in-out;
   }
 
+  .register{
+    text-align: center;
+  }
 
   .glass-button {
     margin-top: 12px;
