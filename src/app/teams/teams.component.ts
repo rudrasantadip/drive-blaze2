@@ -322,6 +322,14 @@ export class TeamsComponent {
       whatsapp: '8777073845',
     },
     {
+      name: 'Samadrita Bhattacharaya',
+      image: '/assets/images/members/coordinators/samadrita.jpeg',
+      insta: '',
+      linkedin: '',
+      x: '',
+      whatsapp: '8017264492',
+    },
+    {
       name: 'Chameli Samanta',
       image: '/assets/images/members/coordinators/2.png',
       insta: '',
