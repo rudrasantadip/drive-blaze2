@@ -65,6 +65,13 @@
   height: 50px;
 }
 
+.go-button:disabled {
+  background-color: #cccccc; /* Gray background for disabled state */
+  color: #666666;            /* Darker gray text color */
+  cursor: not-allowed;       /* Change cursor to indicate the button is not clickable */
+  opacity: 0.6;              /* Reduce opacity to visually indicate it's disabled */
+}
+
 .go-button:hover {
   background-color: #0088cc;
 }

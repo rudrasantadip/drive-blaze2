@@ -18,7 +18,8 @@ export class ContestsComponent {
     {
       name: 'Orion',
       image: '/assets/images/events/comingsoon.png',
-      routerLink: 'https://docs.google.com/forms/d/e/1FAIpQLScpLrVxG7DMXDJgBAMg0JPFw_SfFo7b3Oaqu9S_q4E_e3IDXA/viewform',
+      routerLink: '',
+      // https://docs.google.com/forms/d/e/1FAIpQLScpLrVxG7DMXDJgBAMg0JPFw_SfFo7b3Oaqu9S_q4E_e3IDXA/viewform
       rules: [
         "ONLY THE TEAM LEADER WILL BE FILLING THE REGISTRATION FORM.",
         "PARTICIPANTS WHO ARE REGISTERED AS MEMBERS NEED NOT FILL THE FORM.",
@@ -78,14 +79,16 @@ export class ContestsComponent {
     {
       name: 'Tech For Eye',
       image: '/assets/images/events/comingsoon.png',
-      routerLink: 'https://docs.google.com/forms/d/e/1FAIpQLScR5QMA9nB1gEJr5cqva78sqGamfJPRzUvYFHdNdK6R2Me_KQ/viewform',
+      routerLink: '',
+      // https://docs.google.com/forms/d/e/1FAIpQLScR5QMA9nB1gEJr5cqva78sqGamfJPRzUvYFHdNdK6R2Me_KQ/viewform
       rules: [],
       coordinators: []
     },
     {
       name: 'Yukti Yagna',
       image: '/assets/images/events/comingsoon.png',
-      routerLink: 'https://docs.google.com/forms/d/e/1FAIpQLScPTJHWvW2143YlatEuHfTX1OgreIMgtniYsMTf31jglawK-Q/viewform',
+      routerLink: '',
+      // https://docs.google.com/forms/d/e/1FAIpQLScPTJHWvW2143YlatEuHfTX1OgreIMgtniYsMTf31jglawK-Q/viewform
       rules: [],
       coordinators: []
     },
