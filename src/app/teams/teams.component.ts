@@ -44,6 +44,17 @@ export class TeamsComponent {
       logo: '/assets/images/logo.png',
     },
     {
+      name: 'Prof Dr Chiradeep Mukherjee',
+      image: '/assets/images/members/faculty/chiradip.jpg',
+      insta:'',
+      x:'',
+      linkedin:'',
+      whatsapp:'',
+      designation: 'Faculty Coordinator',
+      association: 'DriveBlaze',
+      logo: '/assets/images/logo.png',
+    },
+    {
       name: 'Prof Dr Sudipta Basu Pal',
       image: '/assets/images/members/faculty/sudipta.jpg',
       insta:'',
@@ -87,17 +98,7 @@ export class TeamsComponent {
       association: 'DriveBlaze',
       logo: '/assets/images/logo.png',
     },
-    {
-      name: 'Prof Dr Chiradeep Mukherjee',
-      image: '/assets/images/members/faculty/chiradip.jpg',
-      insta:'',
-      x:'',
-      linkedin:'',
-      whatsapp:'',
-      designation: 'Faculty Coordinator',
-      association: 'DriveBlaze',
-      logo: '/assets/images/logo.png',
-    },
+    
     {
       name: 'Prof Dr Sankhyadeep Chaterjee',
       image: '/assets/images/members/faculty/sankhadeep.jpg',
