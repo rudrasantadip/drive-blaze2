@@ -216,7 +216,7 @@ export class TeamsComponent {
       whatsapp: '8348284337',
     },
     {
-      name: 'Subhojit Dutta',
+      name: 'Subhajit Dutta',
       image: '/assets/images/members/conveynors/2.png',
       designation: 'Convenor',
       association: 'DriveBlaze',
@@ -240,7 +240,7 @@ export class TeamsComponent {
       whatsapp: '8584874226',
     },
     {
-      name: 'Asmita Ganguly',
+      name: 'Asmita Chakraborty',
       image: '/assets/images/members/conveynors/4.png',
       designation: 'Convenor',
       association: 'DriveBlaze',
