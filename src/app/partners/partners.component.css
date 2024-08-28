@@ -1,0 +1,110 @@
+.glass-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 215, 0, 0.5), 0 0 25px rgba(255, 215, 0, 0.3);
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  box-shadow: 0 8px 16px rgba(255, 215, 0, 0.7), 0 0 40px rgba(255, 215, 0, 0.5);
+}
+
+.sponsor-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+}
+
+.gold{
+  margin-top: 38px;
+}
+
+.partners{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.glass-card:hover {
+  transform: translateY(-10px);
+}
+
+.sponsor-logo {
+ width: 200PX;
+  height: auto;
+  border-radius: 10px;
+}
+
+.sponsor-details {
+  margin-top: 10px;
+}
+
+.sponsor-name {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.sponsor-description {
+  font-size: 0.9em;
+  color: #555;
+}
+
+
+.silver-card{
+  box-shadow: 0 4px 8px rgba(192, 192, 192, 0.4), 0 0 20px rgba(192, 192, 192, 0.3); /* Adds a glowing effect */ /* Silver color with 50% opacity */
+}
+
+.silver-card:hover{
+  box-shadow: 0 8px 16px rgba(192, 192, 192, 0.7), 0 0 25px rgba(192, 192, 192, 0.3); /* Increased shadow on hover */
+}
+
+
+
+@media (max-width: 768px) {
+ .partners
+ {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+ }
+
+
+ @media (max-width: 480px) {
+
+  .sponsor-card
+  {
+    height: 120px;
+  }
+
+  .sponsor-logo {
+    width: 100PX;
+     height: auto;
+     border-radius: 10px;
+   }
+
+  .partners
+  {
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  }
+ }
+
+@media (max-width: 1200px) {
+  .partners
+ {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+ }

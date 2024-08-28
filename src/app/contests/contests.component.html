@@ -2,11 +2,13 @@
   <h3>Participate in thrilling contests organized by DriveBlaze</h3>
   <h4>Win Exotic Cash Prizes , Goodies & Swags</h4>
 
- 
-  <div class="contests">
-    <div class="contest" *ngFor="let event of events" (click)="goto(event.routerLink)">
-      <div class="background" [style.backgroundImage]="'url(' + event.image + ')'" >
-      </div>
+  <div class="grid-container">
+    <div class="glass-container" *ngFor="let event of events">
+        <img [src]="event.image" alt="Event Image" class="event-image">
+        <h2 class="event-name">{{event.name}}</h2>
+        <button class="go-button" (click)="gotoComponent('/event',event)">Visit</button>
     </div>
-  </div>
+    <!-- Add more .glass-container items as needed -->
+</div>
+
 </div>

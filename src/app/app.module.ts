@@ -20,7 +20,9 @@ import { TechphotographyComponent } from './techphotography/techphotography.comp
 import { OrionComponent } from './orion/orion.component';
 import { ContactComponent } from './contact/contact.component';
 import { TeamsComponent } from './teams/teams.component';
-import { WorkshopComponent } from './workshop/workshop.component'
+import { WorkshopComponent } from './workshop/workshop.component';
+import { EventComponent } from './event/event.component';
+import { PartnersComponent } from './partners/partners.component'
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { WorkshopComponent } from './workshop/workshop.component'
     OrionComponent,
     ContactComponent,
     TeamsComponent,
-    WorkshopComponent
+    WorkshopComponent,
+    EventComponent,
+    PartnersComponent
   ],
   imports: [
     BrowserModule,

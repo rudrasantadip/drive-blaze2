@@ -13,6 +13,12 @@ export class HackSynthesisComponent implements OnInit,OnDestroy{
   constructor(private renderer:Renderer2){}
   
 
+  activeSection: string = 'timeline'; // Default section
+
+  activateSection(section: string) {
+    this.activeSection = section;
+  }
+
   ngOnInit(): void {
     this.appendScript();
   }

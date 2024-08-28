@@ -11,6 +11,8 @@ import { OrionComponent } from './orion/orion.component';
 import { ContactComponent } from './contact/contact.component';
 import { TeamsComponent } from './teams/teams.component';
 import { WorkshopComponent } from './workshop/workshop.component';
+import { EventComponent } from './event/event.component';
+import { PartnersComponent } from './partners/partners.component';
 
 const routes: Routes = [
   {
@@ -39,6 +41,16 @@ const routes: Routes = [
   {
     path: 'contests',
     component: ContestsComponent,
+  },
+  ,
+  {
+    path: 'partners',
+    component: PartnersComponent,
+  },
+  ,
+  {
+    path: 'event',
+    component: EventComponent,
   },
   {
     path: 'hackathon',

@@ -1,0 +1,179 @@
+.event-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  
+  .left-side {
+    flex: 1;
+    max-width: 40%;
+    text-align: center;
+  }
+  
+  .event-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    width: 400px;
+  }
+  
+  .right-side {
+    flex: 2;
+    max-width: 60%;
+    padding: 20px;
+  }
+  
+  .tabs {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .tabs button {
+    flex: 1;
+    padding: 10px;
+    background-color: rgba(240, 240, 240, 0.5); /* Slight transparency */
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.3s ease;
+    backdrop-filter: blur(5px);
+  }
+  
+  .tabs button.active {
+    background-color: rgba(0, 123, 255, 0.6); /* Slightly darker blue */
+    color: white;
+    backdrop-filter: blur(5px);
+  }
+  
+  .tabs button:hover {
+    background-color: rgba(0, 123, 255, 0.6);
+    color: white;
+  }
+  
+  .content {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3); /* Glass effect background */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    backdrop-filter: blur(10px); /* The actual glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border to enhance glass effect */
+    direction: ltr;
+  }
+  
+  .section-content {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+
+  .glass-button {
+    margin-top: 12px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: rgba(255, 255, 255, 0.2); /* Translucent white background */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    backdrop-filter: blur(10px); /* The glass effect */
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .glass-button:hover {
+    background: rgba(255, 255, 255, 0.3); /* Slightly more opaque on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+  }
+  
+  .glass-button:active {
+    background: rgba(255, 255, 255, 0.4); /* Even more opaque when active */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Less pronounced shadow when active */
+  }
+  
+  .glass-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.6); /* Glow effect on focus */
+  }
+  
+
+  .section-content{
+    height: 300px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-content > ol{
+    text-align: justify;
+  }
+
+
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .card {
+    background: rgba(255, 255, 255, 0.2); /* Translucent white background */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Light border with transparency */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    width: 200px;
+    text-align: center;
+    backdrop-filter: blur(10px); /* Apply blur effect for glass-like appearance */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+  }
+
+  .card-content p a{
+    text-decoration: none;
+  }
+  
+  .card-content h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .card-content p {
+    margin: 8px 0 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @media (max-width: 768px) {
+    .event-details-container {
+      flex-direction: column;
+    }
+  
+    .left-side, .right-side {
+      max-width: 100%;
+    }
+
+    .cards{
+      flex-direction: column;
+      align-content: center;
+     }
+  }
+  
+
+  @media (max-width: 1200px) {
+   .cards{
+    flex-direction: column;
+    align-content: center;
+   }
+  }
+
+  @media (max-width: 480px) {
+    .cards{
+      flex-direction: column;
+      align-content: center;
+     }
+  }

@@ -1,0 +1,50 @@
+<div class="event-details-container">
+  <div class="left-side">
+    <img [src]="image" alt="Event Image" class="event-image" />
+  </div>
+
+  <div class="right-side">
+    <div class="tabs">
+      <button
+        (click)="showSection('contact')"
+        [class.active]="selectedSection === 'contact'"
+      >
+        Contact Information
+      </button>
+      <button
+        (click)="showSection('rules')"
+        [class.active]="selectedSection === 'rules'"
+      >
+        Event Rules
+      </button>
+    </div>
+
+    <div class="content">
+      <div *ngIf="selectedSection === 'contact'" class="section-content">
+        <h3>Contact Information</h3>
+
+        <div class="cards">
+          <div class="card" *ngFor="let c of coordinators">
+            <div class="card-content">
+              <h3>{{c.name}}</h3>
+              <p>Phone: <a [href]="'https://wa.me/+91'+c.mobile">{{c.mobile}}</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="selectedSection === 'rules'" class="section-content">
+        <h3>Event Rules</h3>
+        <ol>
+          <li *ngFor="let rule of rules">{{ rule }}</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="register">
+      <button class="glass-button" (click)="gotoUrl(routerLink)">
+        Register
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,10 @@
 .layout{
   height: 100%;
   direction: ltr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .layout > h3{
@@ -9,73 +13,84 @@
   padding: 0;
 }
 
-.contests{
-  display: flex;
-  flex-direction: row;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Space between items */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 500px;
 }
 
-.contest{
-  object-fit: contain;
-  width: 400px;
-  height: 400px;
+.glass-container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 300px;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
 }
 
-.contest >h3{
-  position: relative;
-  margin-left: 14px;
-  font-weight: 800px;
+.event-image {
+  width: 65%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 
-.contest-text{
+.event-name {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
   font-weight: 700;
 }
 
-.content{
-
+.go-button {
+  background-color: #00aaff;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 150px;
+  height: 50px;
 }
 
-.background{
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-size: 200%;
-  background-repeat: no-repeat;
-  transition: all 0.5s ease-in;
-  cursor: pointer;
-
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.background:hover{
-  width: 75%;
-  height: 75%;
-  transform: rotate(12deg);
-  background-size: 150%;
-}
-
-.background > h3{
-  margin-top: -10px;
-  margin-left: 15px;
+.go-button:hover {
+  background-color: #0088cc;
 }
 
 
-@media (max-width: 768px) {
-  .contests{
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .grid-container{
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
+}
 
-  .contest{
-    width: 200px;
-    height: 200px;
+@media (max-width: 768px) {
+  .grid-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
