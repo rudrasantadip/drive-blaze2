@@ -60,8 +60,8 @@
     </div>
 
     <div class="register">
-      <button class="glass-button" (click)="gotoUrl(routerLink)">
-        Register
+      <button class="glass-button" [disabled]="routerLink==''" (click)="gotoUrl(routerLink)">
+        {{routerLink==''?'Coming Soon':'Register'}}
       </button>
     </div>
   </div>

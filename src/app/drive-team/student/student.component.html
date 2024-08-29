@@ -1,0 +1,33 @@
+<div class="layer">
+    <h2>Coordinators</h2>
+    <div class="members">
+        <div class="nft" *ngFor="let item of coordinators">
+            <div class='main'>
+              <img class='tokenImage' [src]="item.image" alt="DRIVEBLAZE_COORDINATORS" />
+              <h3>{{item.name}}</h3>
+              <div class='tokenInfo'>
+                <div class="duration">
+                  <p><a href=""><i class="fa-brands fa-instagram"></i></a></p>
+                </div>
+                <div class="duration">
+                  <p><a href=""><i class="fa-brands fa-x-twitter"></i></a></p>
+                </div>
+                <div class="duration">
+                  <p><a href=""><i class="fa-brands fa-linkedin"></i></a></p>
+                </div>
+                <div class="duration">
+                  <p><a [href]="sanitize(item.whatsapp)"><i class="fa-brands fa-whatsapp"></i></a></p>
+                </div>
+              </div>
+              <hr />
+              <div class='creator'>
+                <div class='wrapper'>
+                  <img src="/assets/images/logo.png" alt="Creator" />
+                </div>
+                <p><ins>Coordinator</ins> DriveBlaze</p>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+

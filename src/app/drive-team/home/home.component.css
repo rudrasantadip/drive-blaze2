@@ -1,0 +1,175 @@
+.layout{
+    height: 100%;
+    direction: ltr;
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header{
+    padding:50px;
+  }
+  
+  .layout > h3{
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .grid-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 30px;
+  }
+  
+  .glass-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    padding: 1rem;
+    background: rgba(13, 71, 161, 0.4);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 4px 10px rgba(255, 235, 59, 0.5);
+    transition: all 0.5s ease-in;
+    transform: rotate(140deg);
+  }
+
+  .widgets
+  {
+    transform: rotate(220deg);
+  }
+  
+  .glass-container > h2{
+    transform: rotate(220deg);
+  }
+  .glass-container> button{
+    transform: rotate(220deg);
+  }
+
+  .gold-container{
+    background: rgba(255, 213, 79,0.5);
+    box-shadow: 0px 4px 10px rgba(255, 213, 79,0.5);
+  }
+  
+  .glass-container:hover{
+    box-shadow: 0px 8px 20px rgba(57, 73, 171, 0.8);
+    transform: rotate(140deg) scale(1.05);
+  }
+  
+  .event-image {
+    width: 65%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .event-name {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  .go-button {
+    background-color: rgba(255, 179, 0,0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 120px;
+    height: 40px;
+  }
+  
+  .go-button:disabled {
+    background-color: #cccccc; /* Gray background for disabled state */
+    color: #666666;            /* Darker gray text color */
+    cursor: not-allowed;       /* Change cursor to indicate the button is not clickable */
+    opacity: 0.6;              /* Reduce opacity to visually indicate it's disabled */
+  }
+  
+  .go-button:hover {
+    background-color: #0088cc;
+  }
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 1200px) {
+    .grid-container{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  @media (max-width:880px)
+  {
+    .grid-container{
+        font-size: 0.8rem;
+    }
+
+    .glass-container{
+        width: 200px;
+        height: 200px;
+    }
+
+    .go-button{
+        width: 100px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .grid-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 28px;
+      font-size: 0.8rem;
+    }
+
+
+    .glass-container{
+        width:100px;
+        height: 100px;
+        transform: rotate(138deg);
+    }
+
+    .widgets{
+        font-size: 14px;
+    }
+
+    .event-name{
+        font-size: 0.8rem;
+    }
+
+    .go-button {
+        font-size: 0.6rem;
+        width: 70px;
+        height: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+   .grid-container{
+    padding-top: 50px;
+   }
+  }

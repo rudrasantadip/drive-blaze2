@@ -32,11 +32,7 @@ const routes: Routes = [
     path:'contact',
     component:ContactComponent
   }
-  ,
-  {
-    path:'team',
-    component:TeamsComponent
-  }
+  
   ,
   {
     path: 'events',
@@ -67,6 +63,10 @@ const routes: Routes = [
     path: 'yuktiyagna',
     loadChildren: () =>
       import('./yuktiyagna/yuktiyagna.module').then((m) => m.YuktiyagnaModule),
+  },
+  {
+    path:'team',
+    loadChildren:()=>import('./drive-team/drive-team.module').then((m)=>m.DriveTeamModule)
   },
   {
     path:'algoarcade',component:CodersbrawlComponent

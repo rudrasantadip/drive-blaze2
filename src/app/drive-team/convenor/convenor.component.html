@@ -1,0 +1,32 @@
+<div class="layer">
+    <h2>Convenors</h2>
+    <div class="members">
+        <div class="nft" *ngFor="let item of conveynors">
+            <div class='main'>
+              <img class='tokenImage' [src]="item.image" alt="DRIVEBLAZE_CORE" />
+              <h3>{{item.name}}</h3>
+              <div class='tokenInfo'>
+                <div class="duration">
+                  <p><a [href]="item.insta"><i class="fa-brands fa-instagram"></i></a></p>
+                </div>
+                <div class="duration">
+                  <p><a [href]="item.x"><i class="fa-brands fa-x-twitter"></i></a></p>
+                </div>
+                <div class="duration">
+                  <p><a [href]="item.linkedin"><i class="fa-brands fa-linkedin"></i></a></p>
+                </div>
+                <div class="duration">
+                  <p><a [href]="sanitize(item.whatsapp)"><i class="fa-brands fa-whatsapp"></i></a></p>
+                </div>
+              </div>
+              <hr />
+              <div class='creator'>
+                <div class='wrapper'>
+                  <img [src]="item.logo" alt="Creator" />
+                </div>
+                <p><ins>{{item.designation}}</ins> {{item.association}}</p>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>

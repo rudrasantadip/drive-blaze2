@@ -17,8 +17,8 @@ export class ContestsComponent {
   events: DriveEvent[] = [
     {
       name: 'Orion',
-      image: '/assets/images/events/comingsoon.png',
-      routerLink: '',
+      image: '/assets/images/events/webdev.jpg',
+      routerLink: 'https://docs.google.com/forms/d/e/1FAIpQLScpLrVxG7DMXDJgBAMg0JPFw_SfFo7b3Oaqu9S_q4E_e3IDXA/viewform',
       // https://docs.google.com/forms/d/e/1FAIpQLScpLrVxG7DMXDJgBAMg0JPFw_SfFo7b3Oaqu9S_q4E_e3IDXA/viewform,
       info: `ORION is an exhilarating web development challenge designed for passionate web developers eager to showcase their skills. Whether you're working solo or with a partner, this contest offers the perfect platform to create a fully functional website within a limited time frame. With cash prizes of ₹5,000 for the winner, ₹3,000 for the runner-up, and ₹2,000 for third place, ORION not only rewards your creativity but also provides valuable networking opportunities and industry recognition. Join ORION, push your boundaries, and stand out in the web development community!`,
       rules: [
@@ -98,8 +98,8 @@ export class ContestsComponent {
     },
     {
       name: 'Tech For Eye',
-      image: '/assets/images/events/comingsoon.png',
-      routerLink: '',
+      image: '/assets/images/events/photo.jpg',
+      routerLink: 'https://docs.google.com/forms/d/e/1FAIpQLScR5QMA9nB1gEJr5cqva78sqGamfJPRzUvYFHdNdK6R2Me_KQ/viewform',
       // https://docs.google.com/forms/d/e/1FAIpQLScR5QMA9nB1gEJr5cqva78sqGamfJPRzUvYFHdNdK6R2Me_KQ/viewform
       rules: [
         "ELIGIBILITY: STUDENTS ACROSS ALL UNIVERSITIES & COLLEGES CAN PARTICIPATE.",
@@ -122,7 +122,7 @@ export class ContestsComponent {
     {
       name: 'Yukti Yagna',
       image: '/assets/images/events/comingsoon.png',
-      routerLink: '',
+      routerLink: 'https://docs.google.com/forms/d/e/1FAIpQLScPTJHWvW2143YlatEuHfTX1OgreIMgtniYsMTf31jglawK-Q/viewform',
       // https://docs.google.com/forms/d/e/1FAIpQLScPTJHWvW2143YlatEuHfTX1OgreIMgtniYsMTf31jglawK-Q/viewform
       rules: [
        "ONLY ONE PERSON SHOULD FILL UP THE FORM, WHO IS DESIGNATED TO BE THE LEADER.",
@@ -146,7 +146,7 @@ export class ContestsComponent {
     },
     {
       name: 'ScriptGrid',
-      image: '/assets/images/events/comingsoon.png',
+      image: '/assets/images/events/scriptgrid.jpg',
       routerLink: '',
       rules: [],
       coordinators: [
@@ -163,7 +163,7 @@ export class ContestsComponent {
     },
     {
       name: 'StackD',
-      image: '/assets/images/events/comingsoon.png',
+      image: '/assets/images/events/workshop.png',
       routerLink: '',
       rules: [
         "ELIGIBILITY:- STUDENTS ACROSS ALL COLLEGES AND UNIVERSITIES ( ENROLLED IN ANY TECHNICAL COURSE, OR IS PERSONALLY INTERESTED IN THE TECHNOLOGY).",
@@ -180,6 +180,26 @@ export class ContestsComponent {
         }
       ],
       info: `StackD is an immersive offline workshop focused on full-stack web development, designed to equip participants with hands-on experience and industry insights. Join StackD to learn the latest web technologies, build practical projects, and enhance your coding skills under the guidance of expert instructors. Perks include exclusive swags, a comprehensive learning experience, and a certificate of completion that adds value to your professional profile. Don’t miss this opportunity to dive deep into full-stack development and connect with like-minded enthusiasts!`,
+    },
+    {
+      name: 'CeleBharat',
+      image: '/assets/images/events/celebharat.jpg',
+      routerLink: 'https://docs.google.com/forms/d/e/1FAIpQLSdMfQ2ntYK1d5H_NIodkLsiszbzGXqlouPC9Wu9pynW26AT9w/viewform',
+      rules: [
+        "Each startup must provide their valid POB (Proof Of Business).",
+        "Established Businesses must provide their Business Trade  License No Business Registration Number",
+        "Every startup is requested to produce a presentation which gives a through briefing of the former, its proposition and aim.",
+        " Please provide an estimate of your current funding status, and the amount of money you expect to be raised.",
+        "Every startup can bring a minimum of 1 to maximum of 4 members."
+      ],
+      coordinators: [
+        {
+          name:'Pratyay Chaterjee',
+          mobile:'8918389523'
+        }
+      ],
+      info: `CeleBharat is an exclusive event designed to bring together innovative startups and potential investors in a dynamic, setting at our university premise. At CeleBharat, startups have the unique opportunity to showcase their groundbreaking ideas and business models directly to a curated group of investors seeking the next big opportunity.
+This event provides a platform for startups to pitch their visions, demonstrate their traction, and articulate their investment needs. With a focus on fostering meaningful connections, CeleBharat offers startups valuable exposure to investors who are passionate about supporting and scaling innovative ventures.`,
     },
   ];
 

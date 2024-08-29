@@ -315,7 +315,7 @@ export class TeamsComponent {
   coordinators = [
     {
       name: 'Ishita Mondal',
-      image: '/assets/images/members/coordinators/1.png',
+      image: '/assets/images/members/coordinators/ishita.jpg',
       insta: 'https://www.instagram.com/is.hita2575?utm_source=qr&igsh=MWo4aDNxZjY5YXVocA==',
       linkedin: 'https://www.linkedin.com/in/ishita-mondal-8b3062254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
       x: '',
@@ -355,7 +355,7 @@ export class TeamsComponent {
     },
     {
       name: 'Pratik Saha',
-      image: '/assets/images/members/coordinators/4.png',
+      image: '/assets/images/members/coordinators/pratik.jpeg',
       insta: 'https://www.instagram.com/x_disaster__xx?igsh=NDV0b2ZqeTFmZmMz',
       linkedin: 'https://www.linkedin.com/in/pratik-saha-93431424a/',
       x: 'https://x.com/sahapratik390?t=xSDakno8AvKGrlR6I4Gkpw&s=08',
