@@ -164,7 +164,7 @@ export class ContestsComponent {
     {
       name: 'StackD',
       image: '/assets/images/events/workshop.png',
-      routerLink: '',
+      routerLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeRJQcub1omqriDFuRbFWcXd2SOocWsJiIOsXJWThXDy5RFQQ/viewform',
       rules: [
         "ELIGIBILITY:- STUDENTS ACROSS ALL COLLEGES AND UNIVERSITIES ( ENROLLED IN ANY TECHNICAL COURSE, OR IS PERSONALLY INTERESTED IN THE TECHNOLOGY).",
         "SEATING WILL BE PROVIDED ON FIRST COME FIRST SERVE BASIS.",
