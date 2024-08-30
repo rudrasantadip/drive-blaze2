@@ -60,6 +60,22 @@ export class StudentComponent {
       whatsapp: '9874749434',
     },
     {
+      name: 'Dipan Guha',
+      image: '/assets/images/members/coordinators/dipan_guha.jpeg',
+      insta: '',
+      linkedin: '',
+      x: '',
+      whatsapp:'',
+    },
+    {
+      name: 'Arka Nandi',
+      image: '/assets/images/members/coordinators/arka_nandi.jpeg',
+      insta: '',
+      linkedin: '',
+      x: '',
+      whatsapp:'',
+    },
+    {
       name: 'Pratik Saha',
       image: '/assets/images/members/coordinators/pratik.jpeg',
       insta: 'https://www.instagram.com/x_disaster__xx?igsh=NDV0b2ZqeTFmZmMz',
