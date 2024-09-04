@@ -123,7 +123,7 @@ export class ContestsComponent {
     },
     {
       name: 'Yukti Yagna',
-      image: '/assets/images/events/comingsoon.png',
+      image: '/assets/images/events/yuktiyagna.jpg',
       routerLink:
         'https://docs.google.com/forms/d/e/1FAIpQLScPTJHWvW2143YlatEuHfTX1OgreIMgtniYsMTf31jglawK-Q/viewform',
       // https://docs.google.com/forms/d/e/1FAIpQLScPTJHWvW2143YlatEuHfTX1OgreIMgtniYsMTf31jglawK-Q/viewform
