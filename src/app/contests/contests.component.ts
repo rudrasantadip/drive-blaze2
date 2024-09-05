@@ -126,7 +126,6 @@ export class ContestsComponent {
       image: '/assets/images/events/comingsoon.png',
       routerLink:
         'https://docs.google.com/forms/d/e/1FAIpQLScPTJHWvW2143YlatEuHfTX1OgreIMgtniYsMTf31jglawK-Q/viewform',
-      // https://docs.google.com/forms/d/e/1FAIpQLScPTJHWvW2143YlatEuHfTX1OgreIMgtniYsMTf31jglawK-Q/viewform
       rules: [
         'ONLY ONE PERSON SHOULD FILL UP THE FORM, WHO IS DESIGNATED TO BE THE LEADER.',
         'SOLO PARTICIPATION IS ALLOWED AND A MAXIMUM OF TWO MEMBERS IS ALLOWED.',
