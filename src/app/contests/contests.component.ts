@@ -123,7 +123,7 @@ export class ContestsComponent {
     },
     {
       name: 'Yukti Yagna',
-      image: '/assets/images/events/comingsoon.png',
+      image: '/assets/images/events/yuktiyagna.jpg',
       routerLink:
         'https://docs.google.com/forms/d/e/1FAIpQLScPTJHWvW2143YlatEuHfTX1OgreIMgtniYsMTf31jglawK-Q/viewform',
       rules: [
@@ -149,7 +149,7 @@ export class ContestsComponent {
     {
       name: 'ScriptGrid',
       image: '/assets/images/events/scriptgrid.jpg',
-      routerLink: '',
+      routerLink: 'https://docs.google.com/forms/d/e/1FAIpQLScjSJk76cP-syShCh4E9uFJxNuYXY9q4DAoUifantUeuwwk1g/viewform',
       rules: [],
       coordinators: [
         {
