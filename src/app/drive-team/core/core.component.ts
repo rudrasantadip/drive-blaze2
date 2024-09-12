@@ -61,8 +61,8 @@ export class CoreComponent {
       whatsapp:'9007811583'
     },
     {
-      name: 'Sarbojit Poddar',
-      image: '/assets/images/members/core/3.png',
+      name: 'Sarbojit Podder',
+      image: '/assets/images/members/core/sarba.jpeg',
       insta:'https://www.instagram.com/sarbojit_03?igsh=MTk4anM1eHlhbG5wcQ==',
       x:'',
       linkedin:'https://www.linkedin.com/in/sarbojit-podder-4444b6255',
