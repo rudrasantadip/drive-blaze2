@@ -22,7 +22,7 @@ export class ConvenorComponent {
   conveynors = [
     {
       name: 'Diptadip Biswas',
-      image: '/assets/images/members/conveynors/diptadip.jpeg',
+      image: '/assets/images/members/conveynors/diptadip.jpg',
       designation: 'Lead Convenor',
       association: 'DriveBlaze',
       logo: '/assets/images/logo.png',
@@ -78,6 +78,18 @@ export class ConvenorComponent {
       linkedin: 'https://www.linkedin.com/in/arkadeep-sen-745b98255/',
       x: '',
       whatsapp: '8100034944',
+    },
+    {
+      name: 'Subham Ghosh',
+      image: '/assets/images/members/conveynors/subham.jpeg',
+      designation: 'Convenor',
+      association: 'DriveBlaze',
+      logo: '/assets/images/logo.png',
+
+      insta: '',
+      linkedin: '',
+      x: '',
+      whatsapp: '',
     },
     {
       name: 'Asmita Chakraborty',

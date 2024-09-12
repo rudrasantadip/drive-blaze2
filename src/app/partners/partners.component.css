@@ -17,7 +17,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 240px;
+  height: 220px;
 }
 
 .gold{
@@ -39,7 +39,7 @@
 }
 
 .sponsor-logo {
- width: 200PX;
+ width: 180PX;
   height: auto;
   border-radius: 10px;
 }
