@@ -80,6 +80,30 @@ export class ConvenorComponent {
       whatsapp: '8100034944',
     },
     {
+      name: 'Soham Karmakar',
+      image: '/assets/images/members/conveynors/sohom.jpeg',
+      designation: 'Convenor',
+      association: 'DriveBlaze',
+      logo: '/assets/images/logo.png',
+
+      insta: '',
+      linkedin: '',
+      x: '',
+      whatsapp: '',
+    },
+    {
+      name: 'Puspendu Sarangi',
+      image: '/assets/images/members/conveynors/puspendu.jpeg',
+      designation: 'Convenor',
+      association: 'DriveBlaze',
+      logo: '/assets/images/logo.png',
+
+      insta: '',
+      linkedin: '',
+      x: '',
+      whatsapp: '',
+    },
+    {
       name: 'Subham Ghosh',
       image: '/assets/images/members/conveynors/subham.jpeg',
       designation: 'Convenor',
