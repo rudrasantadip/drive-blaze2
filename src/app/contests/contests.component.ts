@@ -17,7 +17,7 @@ export class ContestsComponent {
   events: DriveEvent[] = [
     {
       name: 'Orion',
-      image: '/assets/images/events/webdev.jpg',
+      image: '/assets/images/events/orion.jpeg',
       routerLink:
         'https://docs.google.com/forms/d/e/1FAIpQLScpLrVxG7DMXDJgBAMg0JPFw_SfFo7b3Oaqu9S_q4E_e3IDXA/viewform',
       // https://docs.google.com/forms/d/e/1FAIpQLScpLrVxG7DMXDJgBAMg0JPFw_SfFo7b3Oaqu9S_q4E_e3IDXA/viewform,
