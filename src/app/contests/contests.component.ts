@@ -184,28 +184,28 @@ export class ContestsComponent {
       ],
       info: `StackD is an immersive offline workshop focused on full-stack web development, designed to equip participants with hands-on experience and industry insights. Join StackD to learn the latest web technologies, build practical projects, and enhance your coding skills under the guidance of expert instructors. Perks include exclusive swags, a comprehensive learning experience, and a certificate of completion that adds value to your professional profile. Don’t miss this opportunity to dive deep into full-stack development and connect with like-minded enthusiasts!`,
     },
-    {
-      name: 'Tech Talks',
-      image: '/assets/images/events/techtalks.png',
-      routerLink:
-        'https://docs.google.com/forms/d/e/1FAIpQLSfFhdtcJ0Y8FsWD5gFVnZQnf1ZuTgbHrPKUhqu9nrR259yL6g/viewform',
-      rules: [
-        'PLEASE ENSURE THE PROPER PAYMENT CREDENTIALS ARE UPLOADED.',
-        'DOUBLE CHECK YOUR PERSONAL INFORMATION SUCH AS EMAIL, MOBILE NUMBER AS THAT WOULD BE ESSENTIAL FOR ESTABLISHING FURTHER CONTACT.',
-        'SEATING WILL BE ON FIRST COME FIRST SERVE BASIS.'
-      ],
-      coordinators: [
-        {
-          name: 'Pratyay Chaterjee',
-          mobile: '8918389523',
-        },
-        {
-          name:'Anuja Roy',
-          mobile:'9007811583'
-        }
-      ],
-      info: `Join us for an exclusive technical talk session featuring CEOs and CTOs from leading organizations. These industry pioneers will delve into the latest technological trends, offering insights into the innovations shaping our future. They will also share personal stories from their journeys, providing a unique perspective on balancing the demands of leadership with the fast-paced world of technology. This session is a rare opportunity to learn from the experiences of those at the forefront of the industry. Don't miss out!  `,
-    },
+    // {
+    //   name: 'Tech Talks',
+    //   image: '/assets/images/events/techtalks.png',
+    //   routerLink:
+    //     'https://docs.google.com/forms/d/e/1FAIpQLSfFhdtcJ0Y8FsWD5gFVnZQnf1ZuTgbHrPKUhqu9nrR259yL6g/viewform',
+    //   rules: [
+    //     'PLEASE ENSURE THE PROPER PAYMENT CREDENTIALS ARE UPLOADED.',
+    //     'DOUBLE CHECK YOUR PERSONAL INFORMATION SUCH AS EMAIL, MOBILE NUMBER AS THAT WOULD BE ESSENTIAL FOR ESTABLISHING FURTHER CONTACT.',
+    //     'SEATING WILL BE ON FIRST COME FIRST SERVE BASIS.'
+    //   ],
+    //   coordinators: [
+    //     {
+    //       name: 'Pratyay Chaterjee',
+    //       mobile: '8918389523',
+    //     },
+    //     {
+    //       name:'Anuja Roy',
+    //       mobile:'9007811583'
+    //     }
+    //   ],
+    //   info: `Join us for an exclusive technical talk session featuring CEOs and CTOs from leading organizations. These industry pioneers will delve into the latest technological trends, offering insights into the innovations shaping our future. They will also share personal stories from their journeys, providing a unique perspective on balancing the demands of leadership with the fast-paced world of technology. This session is a rare opportunity to learn from the experiences of those at the forefront of the industry. Don't miss out!  `,
+    // },
     {
       name: 'CeleBharat',
       image: '/assets/images/events/celebharat.jpg',
