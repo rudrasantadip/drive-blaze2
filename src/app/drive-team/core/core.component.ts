@@ -30,7 +30,7 @@ export class CoreComponent {
     },
     {
       name: 'Sayan Das',
-      image: '/assets/images/members/core/5.png',
+      image: '/assets/images/members/core/sayan.jpeg',
       insta:'',
       x:'',
       linkedin:'',
