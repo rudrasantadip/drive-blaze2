@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit, Renderer2 } from '@angular/core';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-hack-synthesis',
@@ -10,7 +11,7 @@ export class HackSynthesisComponent implements OnInit,OnDestroy{
 
   // script variable
   private script:HTMLScriptElement;
-  constructor(private renderer:Renderer2){}
+  constructor(private renderer:Renderer2,private router:Router){}
   
 
   activeSection: string = 'timeline'; // Default section
@@ -32,6 +33,10 @@ export class HackSynthesisComponent implements OnInit,OnDestroy{
 
   register() {
     window.location.href = 'https://devfolio.co';
+  }
+
+  goto(url:string){
+    this.router.navigate([url]);
   }
 
   // DevFolio Button integration
