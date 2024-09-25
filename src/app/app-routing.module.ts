@@ -13,6 +13,7 @@ import { TeamsComponent } from './teams/teams.component';
 import { WorkshopComponent } from './workshop/workshop.component';
 import { EventComponent } from './event/event.component';
 import { PartnersComponent } from './partners/partners.component';
+import { FinalistsComponent } from './finalists/finalists.component';
 
 const routes: Routes = [
   {
@@ -76,6 +77,10 @@ const routes: Routes = [
   },
   {
     path:'orion',component:OrionComponent
+  },
+  {
+    path:'finalists',
+    component:FinalistsComponent
   }
 ];
 

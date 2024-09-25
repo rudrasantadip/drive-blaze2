@@ -161,3 +161,7 @@
     overflow: scroll;
   }
 }
+
+.finalists{
+  background-color: gold !important;
+}
