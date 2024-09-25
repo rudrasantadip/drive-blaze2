@@ -79,7 +79,7 @@ const routes: Routes = [
     path:'orion',component:OrionComponent
   },
   {
-    path:'finalists',
+    path:'hacksynthesis/finalists',
     component:FinalistsComponent
   }
 ];
