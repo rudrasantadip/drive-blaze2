@@ -94,17 +94,17 @@ export class FacultyComponent {
     },
     
     
-    {
-      name: 'Prof. Dr. Sankhadeep Chaterjee',
-      image: '/assets/images/members/faculty/sankhadeep.jpg',
-      insta:'',
-      x:'',
-      linkedin:'',
-      whatsapp:'',
-      designation: 'Faculty Coordinator',
-      association: 'DriveBlaze',
-      logo: '/assets/images/logo.png',
-    },
+    // {
+    //   name: 'Prof. Dr. Sankhadeep Chaterjee',
+    //   image: '/assets/images/members/faculty/sankhadeep.jpg',
+    //   insta:'',
+    //   x:'',
+    //   linkedin:'',
+    //   whatsapp:'',
+    //   designation: 'Faculty Coordinator',
+    //   association: 'DriveBlaze',
+    //   logo: '/assets/images/logo.png',
+    // },
     {
       name: 'Prof. Pradipta Sarkar',
       image: '/assets/images/members/faculty/pradipta.jpg',
