@@ -104,7 +104,7 @@ export class FinalistsComponent {
     {
       slNo:18,
       teamName: 'Axios',
-      members: ['Srija Adhya','Pritam Kundu','Soham Aich']
+      members: ['Srija Adhya','Pritam Kundu']
     },
     {
       slNo:19,

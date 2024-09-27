@@ -92,8 +92,6 @@ export class FacultyComponent {
       association: 'DriveBlaze',
       logo: '/assets/images/logo.png',
     },
-    
-    
     // {
     //   name: 'Prof. Dr. Sankhadeep Chaterjee',
     //   image: '/assets/images/members/faculty/sankhadeep.jpg',
