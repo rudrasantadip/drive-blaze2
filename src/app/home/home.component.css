@@ -110,6 +110,10 @@
 
 @media (max-width: 480px) {
 
+  .button-9 {
+    font-size: 8px;
+  }
+
   .logo > img{
     width: 25%;
   }
@@ -149,6 +153,9 @@
 }
 
 @media (max-width: 768px) {
+  .button-9 {
+    font-size: 8px;
+  }
 
   .logo > img{
     width: 75%;
@@ -204,6 +211,10 @@
   .logo > img {
       width: 50%;
   }
+
+  .button-9 {
+    font-size: 8px;
+  }
 }
 
 
@@ -245,4 +256,20 @@
 
 .button-9:focus {
   box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+.custom-link {
+  margin-top: 12px;
+  color: gold;         /* Link color */
+  text-decoration: none;  /* Remove underline */
+  font-weight: bold;      /* Bold text */
+  border: 2px solid gold; /* Add border */
+  padding: 10px 15px;     /* Add padding */
+  border-radius: 5px;     /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+.custom-link:hover {
+  background-color: gold;  /* Change background on hover */
+  color: white;               /* Change text color on hover */
 }

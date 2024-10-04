@@ -15,6 +15,7 @@ import { EventComponent } from './event/event.component';
 import { PartnersComponent } from './partners/partners.component';
 import { FinalistsComponent } from './finalists/finalists.component';
 
+
 const routes: Routes = [
   {
     path: 'home',
@@ -81,7 +82,8 @@ const routes: Routes = [
   {
     path:'hacksynthesis/finalists',
     component:FinalistsComponent
-  }
+  },
+  { path: '**', redirectTo: '/', pathMatch: 'full' } // Optional: Catch-all route
 ];
 
 @NgModule({

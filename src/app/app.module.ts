@@ -13,6 +13,8 @@ import { AboutComponent } from './about/about.component';
 
 import {HttpClientModule} from '@angular/common/http';
 import { NgxUiLoaderHttpModule, NgxUiLoaderModule, NgxUiLoaderRouterModule } from "ngx-ui-loader";
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+
 
 import { TechtitantakedownComponent } from './techtitantakedown/techtitantakedown.component';
 import { CodersbrawlComponent } from './codersbrawl/codersbrawl.component';
@@ -23,7 +25,7 @@ import { TeamsComponent } from './teams/teams.component';
 import { WorkshopComponent } from './workshop/workshop.component';
 import { EventComponent } from './event/event.component';
 import { PartnersComponent } from './partners/partners.component';
-import { FinalistsComponent } from './finalists/finalists.component'
+import { FinalistsComponent } from './finalists/finalists.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,8 @@ import { FinalistsComponent } from './finalists/finalists.component'
     WorkshopComponent,
     EventComponent,
     PartnersComponent,
-    FinalistsComponent
+    FinalistsComponent,
+  
   ],
   imports: [
     BrowserModule,
@@ -52,7 +55,8 @@ import { FinalistsComponent } from './finalists/finalists.component'
     HttpClientModule,
     NgxUiLoaderModule,
     NgxUiLoaderRouterModule,
-    NgxUiLoaderHttpModule
+    NgxUiLoaderHttpModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
